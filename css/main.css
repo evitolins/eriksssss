@@ -118,22 +118,22 @@ header {
 }
 
 #content {
-  background-image: url("http://www.digitaltrends.com/wp-content/uploads/2013/02/life-of-pi-03.jpg");
+  background-image: url("/imgs/life-of-pi_tiger.jpg");
   background-repeat: no-repeat;
 }
 #content2 {
-  background-image: url("http://1.bp.blogspot.com/-B6OWKCjY4io/T-iFFWVIi1I/AAAAAAAAAZU/rCsEhTTXlWA/s1600/rhythm_and_hues_SWATH_RandH-BridgeTroll_Cinefex.jpg");
-  background-position: -130px -450px;
+  background-image: url("/imgs/snow-white_troll.jpg");
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 #content3 {
-  background-image: url("http://0.tqn.com/d/comicbooks/1/0/d/j/352664_FP_T2_23.89r.jpg");
-  background-position: -390px 0px;
+  background-image: url("/imgs/hulk_punch.jpg");
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 #content4 {
-  background-image: url("https://gfx.videobuster.de/archive/resized/h550/2009/12/image/jpeg/9d1b7a1a72e3445e7b5408ec735cc28c.jpg");
-  background-position: 0px 0px;
+  background-image: url("/imgs/golden-compass_pan.jpg");
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
