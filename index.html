@@ -4,17 +4,7 @@
 <meta charset=utf-8 />
 <title>Eriks Vitolins</title>
 
-<!-- Add jQuery library -->
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<!-- Add fancyBox -->
-<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<!-- Add Bootstrap -->
-<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Raleway:400,700,800' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.css" />
 <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.min.css" />
 <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.css" />
@@ -27,9 +17,15 @@
     <div id="title">
       <span style="font-weight:bold;">Eriks</span><span style="color:#ea3;">Vitolins</span>
       <div id="menu_container">
-        <nav id="nav1"><a class="fancybox-media" href="https://vimeo.com/70660605"><i class="icon-film"> animation</i></a></nav>
-        <nav id="nav2"><i class="icon-cogs"> development</i></nav>
-        <!-- <nav id="nav3"><i class="icon-music"> music</i></nav> -->
+        <nav id="nav1">
+          <a class="fancybox-media" href="https://vimeo.com/70660605" target="_blank"><i class="icon-film"> animation</i></a>
+        </nav>
+        <nav id="nav2">
+          <a class="fancybox-media" href="https://github.com/evitolins" target="_blank"><i class="icon-cogs"> development</i></a>
+        </nav>
+        <nav id="nav3">
+          <a class="fancybox-media" href="https://soundcloud.com/evitolins" target="_blank"><i class="icon-music"> music</i></a>
+        </nav>
       </div>
     </div>
   </header>
@@ -65,7 +61,7 @@
           <li><a href="http://myrecordlist.com/eriksssss">Collecting</a>, listening, playing, writing and <a href="https://soundcloud.com/evitolins">recording</a> music everyday I can.</li>
           <li>Designed and maintained our prototype "mobile" urban garden.  An original design fashioned from a discarded bookcase, meant to maximize urban light exposure.</li>
           <li><u>Slowly</u> building an original, semi-hollow body "Fender Jazz-style" bass guitar from scratch.</li>
-          <li>About to launch a few open-source projects on GitHub. Please stay tuned.</li>
+          <li>Contributing and developing open-source projects on <a href="https://github.com/evitolins" target="_blank">GitHub.</a></li>
         </ul>
         <h1>Achievements</h1>
         <ul>
@@ -101,25 +97,17 @@
         </ul>
         <h1>Contact</h1>
         <ul>
-          <li><a href="https://www.facebook.com/eriks.vitolins.1">facebook</a></li>
-          <li><a href="http://instagram.com/eriksssssssss">instagram</a></li>
-          <li><a href="http://rgbeautiful.tumblr.com/">blog</a></li>
+          <li><i class="icon-facebook icon-fixed-width"></i> <a href="https://www.facebook.com/eriks.vitolins.1">facebook</a></li>
+          <li><i class="icon-instagram icon-fixed-width"></i> <a href="http://instagram.com/eriksssssssss">instagram</a></li>
+          <li><i class="icon-linkedin-sign icon-fixed-width "></i> <a href="https://www.linkedin.com/profile/view?id=7003385">linkedIn</a></li>
+          <li><i class="icon-github-alt icon-fixed-width"></i> <a href="https://github.com/evitolins">github</a></li>
+          <li><i class="icon-rss icon-fixed-width"></i> <a href="http://rgbeautiful.tumblr.com/">blog</a></li>
         </ul>
       </div>
     </div>
   </footer>
-  <!-- Fancybox -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.fancybox-media').fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-        helpers : {
-          media : {}
-        }
-      });
-    });
-  </script>
+  
+  <script src="http://code.jquery.com/jquery.min.js"></script>
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
