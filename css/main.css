@@ -230,8 +230,7 @@ footer {
   top:586px;
   min-height: 500px;
   width: 100%;
-  background: #ccc;
-  background-image: url('/imgs/paper.png');
+  background: #fff;
   padding:0 0 80px;
 }
 
@@ -246,8 +245,7 @@ footer i {
 h1 {
   font-size: 24px;
   font-weight:normal;
-  color:#aaa;
-  text-shadow:-1px -1px 0 rgba(0,0,0,0.2), 1px 1px 0 rgba(255,255,255,1);
+  color:#ccc;
 }
 
 h2, h3, h4{
