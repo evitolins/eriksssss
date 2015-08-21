@@ -6,17 +6,14 @@ Here is a basic breakdown of my services, recommendations and rates.
 
 Infrastructure
 -----------------------
-
 ### Domain
 I recommend [whois.com](https://whois.com) for purchasing domain names. Most domains cost about _$9.88/year_
 
 ### Hosting
-For basic web hosting, I recommend [hostgator.com](http://www.hostgator.com/shared) for it's price and usability. This hosting service is simple and pretty cheap, and has what it needs for your needs.  Longer commitments are cheaper.
+For basic web hosting, I recommend [hostgator.com](http://www.hostgator.com/shared) for it's price and usability. This hosting service is simple and pretty cheap, and has all the features to support Wordpress and custom sites.  Longer commitments are cheaper.
 
-- 1 year: $5.56/mo
-- 2 year: $4.76/mo
-- 3 year: $3.96/mo
-
+> To save time and avoid confusion, it's often easiest for me to setup any infrastructure.  Just let me know what options you prefer.
+>
 > Custom websites and Wordpress sites require hosting.  Services like Squarespace include hosting with their packages.
 
 
@@ -36,7 +33,7 @@ take the most time to complete, but are most flexible for those who require very
 
 > __Required Information__
 > - All the content to be displayed (text, photos, menu, address, phone number...)
-> - What type of functionality does the site need (contact form, blog, etc...)
+> - What type of functionality does the site need (contact form, blog, e-commerce, etc...)
 > - Does the site need to be "responsive" (adjusts automatically for smaller screens such as mobile devices)
 
 > __Wordpress__
@@ -48,7 +45,7 @@ take the most time to complete, but are most flexible for those who require very
 ### Identity &amp; Logo ($75/hour)
 I can build an Illustrator file of your logo, and make any changes you need.  I'm estimating about 2 hours time to create it, and probably 1 hour of making any fixes that you may need.
 
-> __Typical Variations Needed__
+> __Recommended Logo Variations__
 > - light background version
 > - dark background version
 > - monochrome version
