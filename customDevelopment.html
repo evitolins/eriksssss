@@ -12,6 +12,7 @@
   <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.css" />
   <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.min.css" />
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
+  <script src="bower_components/marked/lib/marked.js"></script>
 </head>
 <body>
   <header>
@@ -27,16 +28,24 @@
         <nav class="nav3">
           <a class="topbar" href="/music"><i class="icon-music"></i> music</a>
         </nav>
-        <nav class="nav4">
-          <a class="topbar current" href="/mixtapes"><i class="icon-magnet"></i> mixtapes</a>
-        </nav>
       </div>
     </div>
   </header>
-  <div style="position: absolute; left: 0; right: 0; top: 80px; height: 600px; background-size: cover; background-position-y: 55%; background-image: url(/imgs/mixtapes.jpg);"></div>
+  <div style="position: absolute; left: 0; right: 0; top: 80px; height: 600px; background-size: cover; background-position-y: 55%; background-image: url(/imgs/developBanner.jpg);"></div>
   <footer style="top: 681px;">
     <div id="markdown_content" style="width:600px; margin:40px auto"></div>
   </footer>
+
+  <script>
+    function reqListener () {
+      document.getElementById('markdown_content').innerHTML =  marked(this.responseText);
+    }
+    var url = "customDevelopment.md";
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener('load', reqListener);
+    xhr.open("get", url, true);
+    xhr.send();
+  </script>
 
   <script src="http://code.jquery.com/jquery.min.js"></script>
   <!-- Google Analytics -->
