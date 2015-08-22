@@ -7,10 +7,10 @@ Here is a basic breakdown of my services, recommendations and rates.
 Infrastructure
 -----------------------
 ### Domain
-I recommend [whois.com](https://whois.com) for purchasing domain names. Most domains cost about _$9.88/year_
+I recommend [whois.com](https://whois.com) for purchasing domain names. Most available domains cost about _$9.88/year_
 
 ### Hosting
-For basic web hosting, I recommend [hostgator.com](http://www.hostgator.com/shared) for it's price and usability. This hosting service is simple and pretty cheap, and has all the features to support Wordpress and custom sites.  Longer commitments are cheaper.
+For basic web hosting, I recommend [hostgator.com](http://www.hostgator.com/shared) for it's price and usability. This hosting service is simple and pretty cheap, and has all the features to support Wordpress and custom sites.
 
 > To save time and avoid confusion, it's often easiest for me to setup any infrastructure.  Just let me know what options you prefer.
 >
@@ -24,7 +24,7 @@ Services
 Depending on the site needs, turnaround time, and budget, I can recommend the best option for your particular project.
 
 #### A) TEMPLATED WEBSITE
-For basic needs, this is often the best choice for the price.  Using systems such as [Wordpress](https://wordpress.com/) or [Squarespace](https://squarespace.com) allows polished site behavior out of the box, and have tons of plugins for enhanced features such as blogs, contact forms, and e-commerce systems.
+For basic needs, this is often the best choice for the price.  Using systems such as [Wordpress](https://wordpress.com/) or [Squarespace](https://squarespace.com) allow polished site behavior out of the box, and have tons of plugins for enhanced features such as blogs, contact forms, and e-commerce systems.
 
 #### B) CUSTOM WEBSITE
 For those websites that require features and design that templates can not provide, it's best to create a site from scratch.  These sites often
