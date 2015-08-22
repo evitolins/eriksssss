@@ -41,16 +41,6 @@ take the most time to complete, but are most flexible for those who require very
 > - Purchased template's cost included in invoice. Installation time may vary.
 
 
-
-### Identity &amp; Logo ($75/hour)
-I can build an Illustrator file of your logo, and make any changes you need.  I'm estimating about 2 hours time to create it, and probably 1 hour of making any fixes that you may need.
-
-> __Recommended Logo Variations__
-> - light background version
-> - dark background version
-> - monochrome version
-
-
 ### Business Cards ($75/hour)
 I can help design, layout and order business cards.  A basic design take about 1-3 hours.
 
