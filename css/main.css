@@ -45,7 +45,6 @@
     77% {transform: scale(0.85)  rotateY(-360deg);}
     100% {transform: scale(0.85)  rotateY(-360deg);}
 }
-
 body {
   background: #d6d6d6;
   padding: 0;
@@ -238,10 +237,10 @@ footer a {
   color: #EA3;
 }
 
-footer i {
+/*footer i {
   color: #AAA;
 }
-
+*/
 h1 {
   font-size: 2.2em;
   font-weight: normal;
@@ -323,7 +322,52 @@ blockquote {
   -transition: all 0.2s ease-in-out 0s;  
 }
 
+
+.contact_container {
+     width: 100%;
+}
+
+table.contact_container td {
+     text-align: center;
+}
+table.contact_container a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 3em;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+} 
+table.contact_container a:hover {
+  opacity: 1;
+} 
+
+
 /* For GitHub preview UI */
 .github-widget {
   margin: 20px 0px;
 }
+
+.center {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #ea3;
+  color: #fff;
+  background: #ea3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+.button:hover {
+  color: #ea3;
+  background: #fff;
+}
+
+
+
