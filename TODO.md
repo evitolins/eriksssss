@@ -2,3 +2,4 @@
 
 - http://vuejs.org/guide/
 - https://github.com/jxnblk/plangular
+- https://github.com/visionmedia/page.js
