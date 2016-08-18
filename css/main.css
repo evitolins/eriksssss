@@ -251,7 +251,9 @@ h2 {
   font-size: 1.5em;
   font-weight: 100;
   color: #AAA;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: -20px;
+  margin-right: -20px;
   border-bottom: 2px dotted #DADADA;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -264,6 +266,7 @@ h3{
 h4 {
   color: #777;
   font-size: 0.9em;
+  margin-top: 3em;
   text-transform: uppercase;
 }
 
@@ -274,7 +277,9 @@ h2 a {
 }
 
 p {
-    color: #bbb;
+    color: #848484;
+    font-size: .9em;
+    line-height: 1.7em;
 }
 
 li {
@@ -282,9 +287,15 @@ li {
 }
 
 blockquote {
-    background-color: #F1F1F1;
+    background-color: #f5f5f5;
     padding: 5px 20px;
-    border-left: 3px solid #BBB;
+    margin-top: 30px;
+    border-left: 2px solid #d6d6d6;
+    color: #ababab;
+}
+
+blockquote p {
+    color: inherit;
 }
 
 .title {
