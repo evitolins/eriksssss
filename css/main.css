@@ -1,50 +1,68 @@
 @-webkit-keyframes rotate {
     0% {-webkit-transform: scale(0.85)  rotateY(0deg);}
-    2% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
+    1% {-webkit-transform: scale(0.85)  rotateY(0deg);}
+    3% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
     25% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
-    27% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
+    26% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
+    28% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
     50% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
-    52% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
+    51% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
+    53% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
     75% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
-    77% {-webkit-transform: scale(0.85)  rotateY(-360deg);}
+    76% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
+    78% {-webkit-transform: scale(0.85)  rotateY(-360deg);}
     100% {-webkit-transform: scale(0.85)  rotateY(-360deg);}
 }
 
 @-moz-keyframes rotate {
     0% {-moz-transform: scale(0.85)  rotateY(0deg);}
-    2% {-moz-transform: scale(0.85)  rotateY(-89deg);}
+    1% {-moz-transform: scale(0.85)  rotateY(0deg);}
+    3% {-moz-transform: scale(0.85)  rotateY(-90deg);}
     25% {-moz-transform: scale(0.85)  rotateY(-90deg);}
-    27% {-moz-transform: scale(0.85)  rotateY(-175deg);}
+    26% {-moz-transform: scale(0.85)  rotateY(-90deg);}
+    28% {-moz-transform: scale(0.85)  rotateY(-180deg);}
     50% {-moz-transform: scale(0.85)  rotateY(-180deg);}
-    52% {-moz-transform: scale(0.85)  rotateY(-265deg);}
+    51% {-moz-transform: scale(0.85)  rotateY(-180deg);}
+    53% {-moz-transform: scale(0.85)  rotateY(-270deg);}
     75% {-moz-transform: scale(0.85)  rotateY(-270deg);}
-    77% {-moz-transform: scale(0.85)  rotateY(-360deg);}
+    76% {-moz-transform: scale(0.85)  rotateY(-270deg);}
+    78% {-moz-transform: scale(0.85)  rotateY(-360deg);}
     100% {-moz-transform: scale(0.85)  rotateY(-360deg);}
 }
 
 @-o-keyframes rotate {
     0% {-o-transform: scale(0.85)  rotateY(0deg);}
-    2% {-o-transform: scale(0.85)  rotateY(-90deg);}
+    1% {-o-transform: scale(0.85)  rotateY(0deg);}
+    3% {-o-transform: scale(0.85)  rotateY(-90deg);}
     25% {-o-transform: scale(0.85)  rotateY(-90deg);}
-    27% {-o-transform: scale(0.85)  rotateY(-175deg);}
+    26% {-o-transform: scale(0.85)  rotateY(-90deg);}
+    28% {-o-transform: scale(0.85)  rotateY(-180deg);}
     50% {-o-transform: scale(0.85)  rotateY(-180deg);}
-    52% {-o-transform: scale(0.85)  rotateY(-265deg);}
+    51% {-o-transform: scale(0.85)  rotateY(-180deg);}
+    53% {-o-transform: scale(0.85)  rotateY(-270deg);}
     75% {-o-transform: scale(0.85)  rotateY(-270deg);}
-    77% {-o-transform: scale(0.85)  rotateY(-360deg);}
+    76% {-o-transform: scale(0.85)  rotateY(-270deg);}
+    78% {-o-transform: scale(0.85)  rotateY(-360deg);}
     100% {-o-transform: scale(0.85)  rotateY(-360deg);}
 }
 
 @keyframes rotate {
     0% {transform: scale(0.85)  rotateY(0deg);}
-    2% {transform: scale(0.85)  rotateY(-90deg);}
+    1% {transform: scale(0.85)  rotateY(0deg);}
+    3% {transform: scale(0.85)  rotateY(-90deg);}
     25% {transform: scale(0.85)  rotateY(-90deg);}
-    27% {transform: scale(0.85)  rotateY(-175deg);}
+    26% {transform: scale(0.85)  rotateY(-90deg);}
+    28% {transform: scale(0.85)  rotateY(-180deg);}
     50% {transform: scale(0.85)  rotateY(-180deg);}
-    52% {transform: scale(0.85)  rotateY(-265deg);}
+    51% {transform: scale(0.85)  rotateY(-180deg);}
+    53% {transform: scale(0.85)  rotateY(-270deg);}
     75% {transform: scale(0.85)  rotateY(-270deg);}
-    77% {transform: scale(0.85)  rotateY(-360deg);}
+    76% {transform: scale(0.85)  rotateY(-270deg);}
+    78% {transform: scale(0.85)  rotateY(-360deg);}
     100% {transform: scale(0.85)  rotateY(-360deg);}
 }
+
+
 body {
   background: #d6d6d6;
   padding: 0;
@@ -102,6 +120,9 @@ a.topbar.current {
   -ms-perspective: 3000px;
   -o-perspective: 3000px;
   perspective: 3000px; 
+  -webkit-animation-name:             blur; 
+  -webkit-animation-duration:         40s; 
+  -webkit-animation-iteration-count:  infinite;
 }
 
 .content_cube {
