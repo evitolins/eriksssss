@@ -373,6 +373,14 @@ table.contact_container a:hover {
   opacity: 1;
 } 
 
+.tablelist td {
+    padding: 10px 20px;
+    vertical-align: top;
+}
+.tablelist td:nth-child(1) {
+    text-align: right; 
+    font-weight: 600;
+}
 
 /* For GitHub preview UI */
 .github-widget {
