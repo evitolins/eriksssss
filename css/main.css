@@ -418,7 +418,7 @@ table.contact_container a:hover {
 .slide {
   width:0;
   max-width: 100%;
-  transition: 1s ease-in-out;
+  transition: .7s ease-in-out;
   overflow: hidden;
 }
 
@@ -427,3 +427,19 @@ table.contact_container a:hover {
 }
 
 
+
+.slide .image {
+  background-size: cover;
+  background-position: 50%;
+  height: 506px;
+}
+
+.slide .label {
+  color: #444;
+  padding: 0 28px;
+  font-size: 0.8em;
+  text-align: right;
+  position: relative;
+  bottom: 0px;
+  font-weight: 300;
+}
