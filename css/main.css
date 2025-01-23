@@ -67,44 +67,43 @@ body {
   background: #d6d6d6;
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-  /*http://subtlepatterns.com/patterns/mooning.png*/
-  background-image: url("/imgs/mooning.png");
+  font-family: "Lexend Deca", serif;
+  font-weight: 300;
 }
 
 header {
-  position: relative;
-  background: #fff;
-  color: #aaa;
-  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  background: #111;
+  color: #fff;
+  font-family: "Lexend Deca", serif;
   font-size: 32px;
   margin: 0;
   padding: 20px 30px;
   height: 40px;
+  width: 100%;
+  z-index: 1;
 }
 
 a.topbar {
-  color: #EA3;
+  color: #aaa;
   padding: 6px 10px;
-  border: 1px solid #fff;
-  border-radius: 2px;
+  border-radius: 4px;
   text-decoration: none;
-  font-family: helvetica neue;
-  font-weight: 200;
-  font-size: 0.9em;
-  letter-spacing: 0.1em;
-  -webkit-transition: all 0.2s ease-in-out 0s;                  
-  -moz-transition: all 0.2s ease-in-out 0s;                 
-  -o-transition: all 0.2s ease-in-out 0s;               
-  -transition: all 0.2s ease-in-out 0s;  
+  font-family: "Lexend Deca", serif;;
+  letter-spacing: 0.04em;
+  -webkit-transition: all 0.1s ease-in-out 0s;                  
+  -moz-transition: all 0.1s ease-in-out 0s;                 
+  -o-transition: all 0.1s ease-in-out 0s;               
+  -transition: all 0.1s ease-in-out 0s;  
 }
 
 a.topbar:hover {
-  border: 1px solid #F1DDBB;
+  color: #fff;
 }
 
 a.topbar.current {
-  border: 1px solid #EA3;
+  font-weight: bold;
+  color: #fff;
 }
 
 
@@ -250,12 +249,11 @@ footer {
   top:586px;
   min-height: 500px;
   width: 100%;
-  background: #fff;
   padding:0 0 80px;
 }
 
 footer a {
-  color: #EA3;
+  color: rgb(135 135 135);
 }
 
 /*footer i {
@@ -265,18 +263,17 @@ footer a {
 h1 {
   font-size: 2.2em;
   font-weight: normal;
-  color: #EA3;
+  color: #3e3e3e;
+  margin-top: 1.5em;
 }
 
 h2 {
-  font-size: 1.5em;
-  font-weight: 100;
+  font-size: 1.3em;
   color: #AAA;
-  margin-top: 80px;
-  margin-left: -20px;
-  margin-right: -20px;
-  border-bottom: 2px dotted #DADADA;
-  padding-bottom: 5px;
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -305,6 +302,7 @@ p {
 
 li {
   margin-bottom:10px;
+  font-weight: 300;
 }
 
 blockquote {
@@ -364,13 +362,13 @@ table.contact_container td {
 }
 table.contact_container a {
   text-decoration: none;
-  cursor: pointer;
-  font-size: 3em;
-  opacity: 0.5;
+  font-size: 2em;
+  opacity: 1;
   transition: opacity 0.4s;
+  cursor: pointer;
 } 
 table.contact_container a:hover {
-  opacity: 1;
+  opacity: .8;
 } 
 
 .tablelist td {
@@ -409,5 +407,23 @@ table.contact_container a:hover {
   background: #fff;
 }
 
+.slide-container {
+  height: calc(506px + 1em);
+  display: flex;
+  justify-content: center;
+  top: 80px;
+  position: relative;
+}
+
+.slide {
+  width:0;
+  max-width: 100%;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+
+.slide.current {
+  width: 100%;
+}
 
 
