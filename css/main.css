@@ -68,7 +68,11 @@ footer {
 }
 
 footer a {
-  color: rgb(135 135 135);
+  color: inherit;
+}
+
+footer a:hover {
+  color: #0087ff;
 }
 
 @media screen and (max-width: 500px) {
@@ -89,15 +93,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #AAA;
-  margin-top: 2em;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
 h3{
   color: #000;
   margin: 2em 0 0;
