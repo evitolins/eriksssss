@@ -1,68 +1,3 @@
-@-webkit-keyframes rotate {
-    0% {-webkit-transform: scale(0.85)  rotateY(0deg);}
-    1% {-webkit-transform: scale(0.85)  rotateY(0deg);}
-    3% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
-    25% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
-    26% {-webkit-transform: scale(0.85)  rotateY(-90deg);}
-    28% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
-    50% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
-    51% {-webkit-transform: scale(0.85)  rotateY(-180deg);}
-    53% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
-    75% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
-    76% {-webkit-transform: scale(0.85)  rotateY(-270deg);}
-    78% {-webkit-transform: scale(0.85)  rotateY(-360deg);}
-    100% {-webkit-transform: scale(0.85)  rotateY(-360deg);}
-}
-
-@-moz-keyframes rotate {
-    0% {-moz-transform: scale(0.85)  rotateY(0deg);}
-    1% {-moz-transform: scale(0.85)  rotateY(0deg);}
-    3% {-moz-transform: scale(0.85)  rotateY(-90deg);}
-    25% {-moz-transform: scale(0.85)  rotateY(-90deg);}
-    26% {-moz-transform: scale(0.85)  rotateY(-90deg);}
-    28% {-moz-transform: scale(0.85)  rotateY(-180deg);}
-    50% {-moz-transform: scale(0.85)  rotateY(-180deg);}
-    51% {-moz-transform: scale(0.85)  rotateY(-180deg);}
-    53% {-moz-transform: scale(0.85)  rotateY(-270deg);}
-    75% {-moz-transform: scale(0.85)  rotateY(-270deg);}
-    76% {-moz-transform: scale(0.85)  rotateY(-270deg);}
-    78% {-moz-transform: scale(0.85)  rotateY(-360deg);}
-    100% {-moz-transform: scale(0.85)  rotateY(-360deg);}
-}
-
-@-o-keyframes rotate {
-    0% {-o-transform: scale(0.85)  rotateY(0deg);}
-    1% {-o-transform: scale(0.85)  rotateY(0deg);}
-    3% {-o-transform: scale(0.85)  rotateY(-90deg);}
-    25% {-o-transform: scale(0.85)  rotateY(-90deg);}
-    26% {-o-transform: scale(0.85)  rotateY(-90deg);}
-    28% {-o-transform: scale(0.85)  rotateY(-180deg);}
-    50% {-o-transform: scale(0.85)  rotateY(-180deg);}
-    51% {-o-transform: scale(0.85)  rotateY(-180deg);}
-    53% {-o-transform: scale(0.85)  rotateY(-270deg);}
-    75% {-o-transform: scale(0.85)  rotateY(-270deg);}
-    76% {-o-transform: scale(0.85)  rotateY(-270deg);}
-    78% {-o-transform: scale(0.85)  rotateY(-360deg);}
-    100% {-o-transform: scale(0.85)  rotateY(-360deg);}
-}
-
-@keyframes rotate {
-    0% {transform: scale(0.85)  rotateY(0deg);}
-    1% {transform: scale(0.85)  rotateY(0deg);}
-    3% {transform: scale(0.85)  rotateY(-90deg);}
-    25% {transform: scale(0.85)  rotateY(-90deg);}
-    26% {transform: scale(0.85)  rotateY(-90deg);}
-    28% {transform: scale(0.85)  rotateY(-180deg);}
-    50% {transform: scale(0.85)  rotateY(-180deg);}
-    51% {transform: scale(0.85)  rotateY(-180deg);}
-    53% {transform: scale(0.85)  rotateY(-270deg);}
-    75% {transform: scale(0.85)  rotateY(-270deg);}
-    76% {transform: scale(0.85)  rotateY(-270deg);}
-    78% {transform: scale(0.85)  rotateY(-360deg);}
-    100% {transform: scale(0.85)  rotateY(-360deg);}
-}
-
-
 body {
   background: #d6d6d6;
   padding: 0;
@@ -72,16 +7,23 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
+  top: 0;
   background: #111;
   color: #fff;
   font-family: "Lexend Deca", serif;
   font-size: 32px;
   margin: 0;
-  padding: 20px 30px;
-  height: 40px;
+  padding: 0 30px;
+  height: 80px;
+  line-height: 80px;
   width: 100%;
+  min-width: 600px;
   z-index: 1;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 a.topbar {
@@ -106,160 +48,39 @@ a.topbar.current {
   color: #fff;
 }
 
-
-.content_container {
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  width: 900px;
+.splash {
+  margin-top: 80px;
   height: 506px;
-  margin-left: -450px;
-  -webkit-perspective: 3000px;
-  -moz-perspective: 3000px;
-  -ms-perspective: 3000px;
-  -o-perspective: 3000px;
-  perspective: 3000px; 
-  -webkit-animation-name:             blur; 
-  -webkit-animation-duration:         40s; 
-  -webkit-animation-iteration-count:  infinite;
-}
-
-.content_cube {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation-name:             rotate; 
-  -webkit-animation-duration:         40s; 
-  -webkit-animation-iteration-count:  infinite;
-
-  -moz-transform-style: preserve-3d;
-  -moz-animation-name:             rotate; 
-  -moz-animation-duration:         40s; 
-  -moz-animation-iteration-count:  infinite;
-
-  -ms-transform-style: preserve-3d;
-  -ms-animation-name:             rotate; 
-  -ms-animation-duration:         40s; 
-  -ms-animation-iteration-count:  infinite;
-
-  -o-transform-style: preserve-3d;
-  -o-animation-name:             rotate; 
-  -o-animation-duration:         40s; 
-  -o-animation-iteration-count:  infinite;
-
-  transform-style: preserve-3d;
-  animation-name:             rotate; 
-  animation-duration:         40s; 
-  animation-iteration-count:  infinite;
-}
-
-.cube_panel {
-  position:absolute;
-  box-shadow: 0 0 40px rgba(0,0,0,0.1);
-  height: 506px;
-  width: 900px;
-  margin: 0 auto;
-}
-
-.pos1{
-  background-image: url("/imgs/life-of-pi_tiger.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-
-  -webkit-transform-origin: 450px 0 -450px;
-  -webkit-transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-
-  -moz-transform-origin: 450px 0 -450px;
-  -moz-transform: translateZ(450px) rotateX(0deg) rotateY(0deg);
-
-  -ms-transform-origin: 450px 0 -450px;
-  -ms-transform: translateZ(450px) rotateX(0deg) rotateY(0deg);
-
-  -o-transform-origin: 450px 0 -450px;
-  -o-transform: translateZ(450px) rotateX(0deg) rotateY(0deg);
-
-  transform-origin: 450px 0 -450px;
-  transform: translateZ(450px) rotateX(0deg) rotateY(0deg);   
 }
-.pos2{
-  background-image: url("/imgs/snow-white_troll.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  -webkit-transform-origin: 450px 0 -450px;
-  -webkit-transform: translateZ(0) rotateX(0deg) rotateY(90deg);
-
-  -moz-transform-origin: 450px 0 -450px;
-  -moz-transform: translateZ(450px) rotateX(0deg) rotateY(90deg);
-
-  -ms-transform-origin: 450px 0 -450px;
-  -ms-transform: translateZ(450px) rotateX(0deg) rotateY(90deg);
-
-  -o-transform-origin: 450px 0 -450px;
-  -o-transform: translateZ(450px) rotateX(0deg) rotateY(90deg);
-
-  transform-origin: 450px 0 -450px;
-  transform: translateZ(450px) rotateX(0deg) rotateY(90deg);    
-}
-.pos3{
-  background-image: url("/imgs/hulk_punch.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  -webkit-transform-origin: 450px 0 -450px;
-  -webkit-transform: translateZ(0) rotateX(0deg) rotateY(180deg);
-
-  -moz-transform-origin: 450px 0 -450px;
-  -moz-transform: translateZ(450px) rotateX(0deg) rotateY(180deg);
-
-  -ms-transform-origin: 450px 0 -450px;
-  -ms-transform: translateZ(450px) rotateX(0deg) rotateY(180deg);
-
-  -o-transform-origin: 450px 0 -450px;
-  -o-transform: translateZ(450px) rotateX(0deg) rotateY(180deg);
-
-  transform-origin: 450px 0 -450px;
-  transform: translateZ(450px) rotateX(0deg) rotateY(180deg);
-}
-.pos4{
-  background-image: url("/imgs/golden-compass_pan.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  -webkit-transform-origin: 450px 0 -450px;
-  -webkit-transform: translateZ(0) rotateX(0deg) rotateY(270deg);
-
-  -moz-transform-origin: 450px 0 -450px;
-  -moz-transform: translateZ(450px) rotateX(0deg) rotateY(270deg);
-
-  -ms-transform-origin: 450px 0 -450px;
-  -ms-transform: translateZ(450px) rotateX(0deg) rotateY(270deg);
-
-  -o-transform-origin: 450px 0 -450px;
-  -o-transform: translateZ(450px) rotateX(0deg) rotateY(270deg);
-
-  transform-origin: 450px 0 -450px;
-  transform: translateZ(450px) rotateX(0deg) rotateY(270deg);
-}
-
-
-
 
 footer {
-  position:absolute;
-  top:586px;
   min-height: 500px;
   width: 100%;
   padding:0 0 80px;
+  margin-top: 20px;
+}
+
+.footer-column {
+  width: 600px;
+  margin: 40px auto;
 }
 
 footer a {
   color: rgb(135 135 135);
 }
 
-/*footer i {
-  color: #AAA;
+@media screen and (max-width: 500px) {
+  .splash {
+    max-height: 200px;
+  }
+  
+  footer {
+    top:286px;
+  }
 }
-*/
+
 h1 {
   font-size: 2.2em;
   font-weight: normal;
@@ -280,12 +101,6 @@ h2 {
 h3{
   color: #000;
   margin: 2em 0 0;
-}
-h4 {
-  color: #777;
-  font-size: 0.9em;
-  margin-top: 3em;
-  text-transform: uppercase;
 }
 
 h1 a, 
@@ -318,40 +133,26 @@ blockquote p {
 }
 
 .title {
-  position: relative;
-  top: 0;
-  margin:0 auto;
-  min-width: 600px;
-  max-width: 900px;
-}
-
-.titleLink {
   color: inherit;
   text-decoration: none;
 }
 
 .menu_container {
-  position: absolute;
-  top: -3px;
-  right: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
+
 .menu_container > nav {
-  display:inline;
-  height: 32px;
-  cursor:pointer;
-  border-radius:4px;
-  color:#DDD;
-  font-size:13px;
-  text-align: right;
-  overflow: hidden;
+  cursor: pointer;
+  color: #DDD;
+  font-size: 13px;
 
   -webkit-transition: all 0.2s ease-in-out 0s;                  
   -moz-transition: all 0.2s ease-in-out 0s;                 
   -o-transition: all 0.2s ease-in-out 0s;               
   -transition: all 0.2s ease-in-out 0s;  
 }
-
 
 .contact_container {
      width: 100%;
@@ -393,14 +194,12 @@ table.contact_container a:hover {
   padding: 10px 20px;
   border-radius: 6px;
   text-align: center;
-  border: 1px solid #ea3;
+  border: 1px solid #339dee;
   color: #fff;
   background: #ea3;
   cursor: pointer;
   text-decoration: none;
 }
-
-
 
 .button:hover {
   color: #ea3;
@@ -411,8 +210,7 @@ table.contact_container a:hover {
   height: calc(506px + 1em);
   display: flex;
   justify-content: center;
-  top: 80px;
-  position: relative;
+  margin-top: 80px;
 }
 
 .slide {
@@ -425,8 +223,6 @@ table.contact_container a:hover {
 .slide.current {
   width: 100%;
 }
-
-
 
 .slide .image {
   background-size: cover;
@@ -442,4 +238,20 @@ table.contact_container a:hover {
   position: relative;
   bottom: 0px;
   font-weight: 300;
+}
+
+.grid{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  width: 540px;
+  grid-gap: 1em;
+}
+
+.grid-item {
+  border-radius: 8px;
+  width:270px;
+  height: 200px;
+  background-size:cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
