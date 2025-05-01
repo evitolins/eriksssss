@@ -41,6 +41,14 @@
       href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.min.css"
     />
     <link type="text/css" rel="stylesheet" rel="preload" href="css/main.css" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <header>
@@ -72,8 +80,11 @@
       </div>
     </header>
 
-    <div class="slide-container">
-      <div class="slide current">
+    <div
+      class="slide-container"
+      data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false, "autoPlay": 10000 }'
+    >
+      <div class="slide slide1">
         <div
           class="image"
           style="
@@ -87,7 +98,7 @@
         </div>
       </div>
 
-      <div class="slide">
+      <div class="slide slide2">
         <div
           class="image"
           style="background-image: url('imgs/snow-white_troll2.jpg')"
@@ -98,7 +109,7 @@
         </div>
       </div>
 
-      <div class="slide">
+      <div class="slide slide3">
         <div
           class="image"
           style="
@@ -112,7 +123,7 @@
         </div>
       </div>
 
-      <div class="slide">
+      <div class="slide slide4">
         <div
           class="image"
           style="background-image: url('imgs/golden-compass_pan.jpg')"
@@ -122,10 +133,6 @@
           Animator, Rig &amp; Tool Development
         </div>
       </div>
-    </div>
-
-    <div class="scroll-arrow-container">
-      <img src="imgs/chevron-down.svg" />
     </div>
 
     <footer>
@@ -323,42 +330,6 @@
 
       ga("create", "UA-42733934-1", "eriksssss.com");
       ga("send", "pageview");
-    </script>
-
-    <script>
-      function cycleChildrenWithClass(selector, className) {
-        const parentElement = document.querySelector(selector);
-        if (!parentElement) {
-          console.error(`Element with selector '${selector}' not found.`);
-          return;
-        }
-
-        const children = parentElement.children;
-        if (children.length === 0) {
-          console.error("No children found in the parent element.");
-          return;
-        }
-
-        let index = 0;
-
-        function applyClass() {
-          Array.from(children).forEach((child) =>
-            child.classList.remove(className)
-          );
-          children[index].classList.add(className);
-          index = (index + 1) % children.length;
-        }
-
-        // Start the loop
-        applyClass();
-        setInterval(applyClass, 10000); // 10 seconds
-      }
-
-      // Usage example
-      // Make sure to call this function after the DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
-        cycleChildrenWithClass(".slide-container", "current");
-      });
     </script>
   </body>
 </html>

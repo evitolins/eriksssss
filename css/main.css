@@ -1,5 +1,6 @@
 body {
-  background: #d6d6d6;
+  /* background: #d6d6d6; */
+  background: linear-gradient(338deg, #acacac, transparent);
   padding: 0;
   margin: 0;
   font-family: "Lexend Deca", serif;
@@ -31,12 +32,12 @@ a.topbar {
   padding: 6px 10px;
   border-radius: 4px;
   text-decoration: none;
-  font-family: "Lexend Deca", serif;;
+  font-family: "Lexend Deca", serif;
   letter-spacing: 0.04em;
-  -webkit-transition: all 0.1s ease-in-out 0s;                  
-  -moz-transition: all 0.1s ease-in-out 0s;                 
-  -o-transition: all 0.1s ease-in-out 0s;               
-  -transition: all 0.1s ease-in-out 0s;  
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  -transition: all 0.1s ease-in-out 0s;
 }
 
 a.topbar:hover {
@@ -58,7 +59,7 @@ a.topbar.current {
 footer {
   min-height: 500px;
   width: 100%;
-  padding:0 0 80px;
+  padding: 0 0 80px;
   margin-top: 20px;
 }
 
@@ -79,9 +80,9 @@ footer a:hover {
   .splash {
     max-height: 200px;
   }
-  
+
   footer {
-    top:286px;
+    top: 286px;
   }
 }
 
@@ -94,43 +95,43 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  color: #AAA;
+  color: #aaa;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
-h3{
+h3 {
   color: #000;
   margin: 2em 0 0;
 }
 
-h1 a, 
+h1 a,
 h2 a {
   font-weight: normal;
   font-size: 10pt;
 }
 
 p {
-    color: #848484;
-    font-size: .9em;
-    line-height: 1.7em;
+  color: #848484;
+  font-size: 0.9em;
+  line-height: 1.7em;
 }
 
 li {
-  margin-bottom:10px;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 
 blockquote {
-    background-color: #f5f5f5;
-    padding: 5px 20px;
-    margin-top: 30px;
-    border-left: 2px solid #d6d6d6;
-    color: #ababab;
+  background-color: #f5f5f5;
+  padding: 5px 20px;
+  margin-top: 30px;
+  border-left: 2px solid #d6d6d6;
+  color: #ababab;
 }
 
 blockquote p {
-    color: inherit;
+  color: inherit;
 }
 
 .title {
@@ -143,24 +144,23 @@ blockquote p {
   justify-content: space-around;
 }
 
-
 .menu_container > nav {
   cursor: pointer;
-  color: #DDD;
+  color: #ddd;
   font-size: 13px;
 
-  -webkit-transition: all 0.2s ease-in-out 0s;                  
-  -moz-transition: all 0.2s ease-in-out 0s;                 
-  -o-transition: all 0.2s ease-in-out 0s;               
-  -transition: all 0.2s ease-in-out 0s;  
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -transition: all 0.2s ease-in-out 0s;
 }
 
 .contact_container {
-     width: 100%;
+  width: 100%;
 }
 
 table.contact_container td {
-     text-align: center;
+  text-align: center;
 }
 table.contact_container a {
   text-decoration: none;
@@ -168,18 +168,18 @@ table.contact_container a {
   opacity: 1;
   transition: opacity 0.4s;
   cursor: pointer;
-} 
+}
 table.contact_container a:hover {
-  opacity: .8;
-} 
+  opacity: 0.8;
+}
 
 .tablelist td {
-    padding: 10px 20px;
-    vertical-align: top;
+  padding: 10px 20px;
+  vertical-align: top;
 }
 .tablelist td:nth-child(1) {
-    text-align: right; 
-    font-weight: 600;
+  text-align: right;
+  font-weight: 600;
 }
 
 /* For GitHub preview UI */
@@ -209,19 +209,13 @@ table.contact_container a:hover {
 
 .slide-container {
   height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-top: 80px;
+  box-shadow: 0 11px 20px 8px #00000044;
 }
 
 .slide {
-  width:0;
-  max-width: 100%;
-  transition: .7s ease-in-out;
-  overflow: hidden;
-}
-
-.slide.current {
   width: 100%;
 }
 
@@ -241,7 +235,7 @@ table.contact_container a:hover {
   font-weight: 300;
 }
 
-.grid{
+.grid {
   display: inline-grid;
   grid-template-columns: auto auto;
   width: 540px;
@@ -250,9 +244,38 @@ table.contact_container a:hover {
 
 .grid-item {
   border-radius: 8px;
-  width:270px;
+  width: 270px;
   height: 200px;
-  background-size:contain;
+  background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 200px) {
+  .slide1 .image {
+    background-position: 20% 20% !important;
+  }
+  .slide2 .image {
+    background-position: 40% 50% !important;
+  }
+  .slide3 .image {
+    background-position: 90% 20% !important;
+  }
+  .slide4 .image {
+    background-position: 70% 50% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .slide1 .image {
+    background-position: 50% 20% !important;
+  }
+  .slide2 .image {
+    background-position: 50% 50% !important;
+  }
+  .slide3 .image {
+    background-position: 50% 20% !important;
+  }
+  .slide4 .image {
+    background-position: 50% 50% !important;
+  }
 }

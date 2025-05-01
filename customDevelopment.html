@@ -1,66 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset=utf-8 />
-  <title>Eriks Vitolins</title>
-  <meta name="keywords" content="animation, animator, vfx, rigging, developer, programmer, 3d, cg, cgi, maya, music, musician">
-  <meta name="description" content="Personal portfolio of Eriks Vitolins.">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eriks Vitolins</title>
+    <meta
+      name="keywords"
+      content="animation, animator, vfx, rigging, developer, programmer, 3d, cg, cgi, maya, music, musician"
+    />
+    <meta name="description" content="Personal portfolio of Eriks Vitolins." />
 
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,700,800' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.css" />
-  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.min.css" />
-  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.css" />
-  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.min.css" />
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
-  <script src="bower_components/marked/lib/marked.js"></script>
-</head>
-<body>
-  <header>
-    <div class="title">
-      <a class="titleLink" href="/"><span>eriks</span><span style="color:#ea3; margin-left: 2px;">vitolins</span></a>
-      <div class="menu_container">
-        <nav>
-          <a class="topbar" href="/">home</a>
-        </nav>
-        <nav>
-          <a class="topbar" href="animation.html">animation</a>
-        </nav>
-        <nav>
-          <a class="topbar" href="development.html">development</a>
-        </nav>
-        <nav>
-          <a class="topbar" href="music.html">music</a>
-        </nav>
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome-ie7.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script src="bower_components/marked/lib/marked.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a class="titleLink" href="/"
+          ><span>eriks</span
+          ><span style="color: #ea3; margin-left: 2px">vitolins</span></a
+        >
+        <div class="menu_container">
+          <nav>
+            <a class="topbar" href="/">home</a>
+          </nav>
+          <nav>
+            <a class="topbar" href="animation.html">animation</a>
+          </nav>
+          <nav>
+            <a class="topbar" href="development.html">development</a>
+          </nav>
+          <nav>
+            <a class="topbar" href="music.html">music</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <div style="position: absolute; left: 0; right: 0; top: 80px; height: 270px; background-size: cover; background-position-y: 55%; background-image: url(/imgs/developBanner.jpg);"></div>
-  <footer style="top: 350px;">
-    <div id="markdown_content" style="width:600px; margin:40px auto"></div>
-  </footer>
+    </header>
+    <div
+      style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        height: 270px;
+        background-size: cover;
+        background-position-y: 55%;
+        background-image: url('imgs/developBanner.jpg');
+      "
+    ></div>
+    <footer style="top: 350px">
+      <div id="markdown_content" style="width: 600px; margin: 40px auto"></div>
+    </footer>
 
-  <script>
-    function reqListener () {
-      document.getElementById('markdown_content').innerHTML =  marked(this.responseText);
-    }
-    var url = "customDevelopment.md";
-    var xhr = new XMLHttpRequest();
-    xhr.addEventListener('load', reqListener);
-    xhr.open("get", url, true);
-    xhr.send();
-  </script>
+    <script>
+      function reqListener() {
+        document.getElementById("markdown_content").innerHTML = marked(
+          this.responseText
+        );
+      }
+      var url = "customDevelopment.md";
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener("load", reqListener);
+      xhr.open("get", url, true);
+      xhr.send();
+    </script>
 
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-    ga('create', 'UA-42733934-1', 'eriksssss.com');
-    ga('send', 'pageview');
-  </script> 
-
-</body>
+      ga("create", "UA-42733934-1", "eriksssss.com");
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>
