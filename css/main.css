@@ -208,7 +208,7 @@ table.contact_container a:hover {
 }
 
 .slide-container {
-  height: calc(506px + 1em);
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   margin-top: 80px;
@@ -228,16 +228,16 @@ table.contact_container a:hover {
 .slide .image {
   background-size: cover;
   background-position: 50%;
-  height: 506px;
+  height: calc(100vh - 80px);
 }
 
 .slide .label {
-  color: #444;
+  color: #fff;
   padding: 0 28px;
-  font-size: 0.8em;
+  font-size: 2em;
   text-align: right;
   position: relative;
-  bottom: 0px;
+  bottom: 4em;
   font-weight: 300;
 }
 
@@ -252,7 +252,7 @@ table.contact_container a:hover {
   border-radius: 8px;
   width:270px;
   height: 200px;
-  background-size:cover;
+  background-size:contain;
   background-position: 50%;
   background-repeat: no-repeat;
 }
