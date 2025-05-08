@@ -51,7 +51,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
-    <header>
+    <header class="mainpage">
       <div>
         <a class="title" href="/"><span>eriks vitolins</span></a>
       </div>
@@ -82,7 +82,7 @@
 
     <div
       class="slide-container"
-      data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false, "autoPlay": 10000 }'
+      data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false, "autoPlay": 5000 }'
     >
       <div class="slide slide1">
         <div
@@ -157,7 +157,11 @@
             Development, launch, and maintenance of the
             <b>Amazon Nimble Studio</b> admin console and portal UI
           </li>
-          <li>Founder and Head Developer of <b>RGBnotes.com</b></li>
+          <li>
+            Instructor for Intro to Maya &amp; Intro to Rigging at
+            <b>AnimSchool</b>
+          </li>
+          <li>Founder and Head Developer of <b>RGB Notes</b></li>
           <li>
             Co-Founder, Developer and Animator at <b>Hack and Paint</b> game
             studio.
@@ -276,6 +280,91 @@
           </li>
         </ul>
 
+        <div
+          style="
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+          "
+        >
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/aliens-in-the-attic.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/alvin-and-the-chipmunks-chipwrecked.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/alvin-and-the-chipmunks.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/cabin-in-the-woods.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/garfiled-a-tail-of-two-kitties.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/happy-feet.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/iceage-collision-course.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/life-of-pi.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/lion-witch-and-the-wardrobe.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/night-at-the-museum.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/percy-jackson-sea-of-monsters.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/ripd.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/snow-white-and-the-huntsman.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/superman-returns.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/the-a-team.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/the-golden-compass.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/the-hunger-games.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/the-incredible-hulk.jpg"
+          />
+          <img
+            style="width: 100%; border-radius: 4px"
+            src="_thumbnails/posters/small/yogi-bear.jpg"
+          />
+        </div>
+
         <!-- <h1>Professional experience using the following technologies...</h1> -->
         <h1>Technical Experience</h1>
         <ul>
@@ -330,6 +419,63 @@
 
       ga("create", "UA-42733934-1", "eriksssss.com");
       ga("send", "pageview");
+    </script>
+
+    <script>
+      const scrollDistance = window.innerHeight - 80;
+      const target = document.querySelector("header.mainpage");
+      const className = "scrolled";
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= scrollDistance) {
+          target.classList.add(className);
+        } else {
+          target.classList.remove(className);
+        }
+      });
+    </script>
+
+    <script>
+      function observeObscuredState(element, onObscured, onVisible) {
+        if (
+          !element ||
+          typeof onObscured !== "function" ||
+          typeof onVisible !== "function"
+        )
+          return;
+
+        let wasObscured = null;
+
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            const visibleHeight = entry.intersectionRect.height;
+            const isVisible = entry.isIntersecting;
+
+            if (wasObscured !== !isVisible) {
+              wasObscured = !isVisible;
+              if (!isVisible) {
+                onObscured(entry);
+              } else {
+                onVisible(entry);
+              }
+            }
+          },
+          {
+            root: null,
+            threshold: [0],
+          }
+        );
+
+        observer.observe(element);
+
+        return () => observer.unobserve(element); // Return cleanup
+      }
+
+      const stopObserving = observeObscuredState(
+        document.querySelector(".slide-container"),
+        () => console.log("Element is mostly obscured (≤ 80px visible)"),
+        () => console.log("Element is visible again (> 80px)")
+      );
     </script>
   </body>
 </html>
