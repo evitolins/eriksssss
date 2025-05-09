@@ -43,17 +43,14 @@ a.topbar {
   text-decoration: none;
   font-family: "Lexend Deca", serif;
   letter-spacing: 0.04em;
-  -webkit-transition: all 0.1s ease-in-out 0s;
-  -moz-transition: all 0.1s ease-in-out 0s;
-  -o-transition: all 0.1s ease-in-out 0s;
-  -transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
   text-shadow: 2px 2px 5px #0000002e;
 }
 
 a.topbar.current {
   font-weight: bold;
   color: #fff;
-  border: 1px solid #fff;
+  background: #fff5;
 }
 
 .splash {
@@ -158,10 +155,7 @@ blockquote p {
   color: #ddd;
   font-size: 13px;
 
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  -transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .contact_container {

@@ -13,7 +13,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -101,7 +100,7 @@
       <div class="slide slide2">
         <div
           class="image"
-          style="background-image: url('imgs/snow-white_troll2.jpg')"
+          style="background-image: url('imgs/snow-white_troll.jpg')"
         ></div>
         <div class="label">
           <span style="font-weight: bold">Snow White and the Huntsman</span> -
@@ -433,49 +432,6 @@
           target.classList.remove(className);
         }
       });
-    </script>
-
-    <script>
-      function observeObscuredState(element, onObscured, onVisible) {
-        if (
-          !element ||
-          typeof onObscured !== "function" ||
-          typeof onVisible !== "function"
-        )
-          return;
-
-        let wasObscured = null;
-
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            const visibleHeight = entry.intersectionRect.height;
-            const isVisible = entry.isIntersecting;
-
-            if (wasObscured !== !isVisible) {
-              wasObscured = !isVisible;
-              if (!isVisible) {
-                onObscured(entry);
-              } else {
-                onVisible(entry);
-              }
-            }
-          },
-          {
-            root: null,
-            threshold: [0],
-          }
-        );
-
-        observer.observe(element);
-
-        return () => observer.unobserve(element); // Return cleanup
-      }
-
-      const stopObserving = observeObscuredState(
-        document.querySelector(".slide-container"),
-        () => console.log("Element is mostly obscured (≤ 80px visible)"),
-        () => console.log("Element is visible again (> 80px)")
-      );
     </script>
   </body>
 </html>
