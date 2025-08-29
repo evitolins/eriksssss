@@ -83,6 +83,37 @@
       class="slide-container"
       data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false, "autoPlay": 5000 }'
     >
+      <div class="slide slideX">
+        <div
+          class="image"
+          style="
+            background-image: url(imgs/deadline/portal_ui.jpg);
+            background-position: 50% 87%;
+            filter: brightness(0.5);
+          "
+        ></div>
+        <div class="label">
+          <div class="label-title">AWS Deadline Cloud</div>
+          Frontend Developer II for cloud-based render management UI
+        </div>
+      </div>
+
+      <div class="slide slideY">
+        <div
+          class="image"
+          style="
+            background-image: url(imgs/rgb/rgb_sketch.jpg);
+            background-position: 50% 29%;
+            filter: brightness(0.5);
+          "
+        ></div>
+        <div class="label">
+          <div class="label-title">rgbnotes.com</div>
+          SAAS concived, team built, full-stack developed, service launched,
+          customers served and then acquired by AWS.
+        </div>
+      </div>
+
       <div class="slide slide1">
         <div
           class="image"
@@ -92,19 +123,22 @@
           "
         ></div>
         <div class="label">
-          <span style="font-weight: bold">Life of Pi</span> - Development for
-          Animation and Character/Facial Rigging
+          <div class="label-title">Life of Pi</div>
+          character lead • animation workflow • tool development
         </div>
       </div>
 
       <div class="slide slide2">
         <div
           class="image"
-          style="background-image: url('imgs/snow-white_troll.jpg')"
+          style="
+            background-image: url('imgs/snow-white_troll.jpg');
+            background-position: 50% 20% !important;
+          "
         ></div>
         <div class="label">
-          <span style="font-weight: bold">Snow White and the Huntsman</span> -
-          Development for Animation and Character/Facial Rigging
+          <div class="label-title">Snow White and the Huntsman</div>
+          character lead • animation workflow • tool development
         </div>
       </div>
 
@@ -117,8 +151,8 @@
           "
         ></div>
         <div class="label">
-          <span style="font-weight: bold">The Incredible Hulk</span> - Lead
-          Animator and Tool Development
+          <div class="label-title">The Incredible Hulk</div>
+          animation lead • animation workflow • tool development
         </div>
       </div>
 
@@ -128,33 +162,20 @@
           style="background-image: url('imgs/golden-compass_pan.jpg')"
         ></div>
         <div class="label">
-          <span style="font-weight: bold">The Golden Compass</span> - Lead
-          Animator, Rig &amp; Tool Development
+          <div class="label-title">The Golden Compass</div>
+          character/animation lead • animation workflow • tool development
         </div>
       </div>
     </div>
 
     <footer>
       <div class="footer-column">
-        <h1>Current employment</h1>
-        <ul>
-          <li>
-            2019-current - Frontend Engineer II @ Amazon Web Services (AWS), for
-            <a href="https://aws.amazon.com/deadline-cloud/"
-              >Amazon Deadline Cloud</a
-            >.
-          </li>
-        </ul>
-
         <h1>Notable Projects</h1>
         <ul>
           <li>
-            Development, launch, and maintenance of
-            <b>Amazon Deadline Cloud</b> admin console and monitor portal UI
-          </li>
-          <li>
-            Development, launch, and maintenance of the
-            <b>Amazon Nimble Studio</b> admin console and portal UI
+            Development, launch, and maintenance of 2 major cloud services' AWS
+            service console and monitor portal web/native UI:
+            <b>AWS Deadline Cloud</b> &amp; <b>Amazon Nimble Studio</b>
           </li>
           <li>
             Instructor for Intro to Maya &amp; Intro to Rigging at
@@ -176,11 +197,15 @@
           </li>
         </ul>
 
-        <h1>Achievements</h1>
+        <h1>Past Achievements</h1>
         <ul>
           <li>
-            2019-current - Joined AWS as an acquisition, and migrating Nimble
-            Collective into AWS Nimble Cloud.
+            2019-2025 - Joined Amazon Web Services (AWS) as a Frontend Engineer
+            II, helping to build, launch, monitor and maintain 2 cloud services:
+            <a href="https://aws.amazon.com/deadline-cloud/"
+              >AWS Deadline Cloud</a
+            >
+            and AWS Nimble Cloud .
           </li>
           <li>
             Fall 2019 - RGB Notes acquired by The Nimble Collective - a powerful
@@ -371,26 +396,28 @@
         <h1>Technical Experience</h1>
         <ul>
           <li>
-            <b>Web</b> -
-            <i
-              >TypeScript, JavaScript, React, HTML/CSS, NodeJS, MYSQL, PHP...</i
-            >
+            <b>Agentic AI Development Workflows</b> -
+            <i>Claude Code, Cline, Cursor, Copilot, OpenAI, Amazon Q</i>
           </li>
-          <li><b>Other</b> - <i>Python, QT/PySide, MEL, C#...</i></li>
           <li>
-            <b>3D</b> -
+            <b>Frontend</b> -
+            <i>TypeScript, JavaScript, React, HTML, CSS, VueJS...</i>
+          </li>
+          <li>
+            <b>Backend</b> -
+            <i>Python, QT/PySide, MEL, C#, NodeJS, Bash, MYSQL, PHP, Redis</i>
+          </li>
+          <li>
+            <b>Digital Content Creation</b> -
             <i
               >Maya, Houdini, Blender, Voodoo (proprietary), 3DS Max, Unity,
-              AutoCAD</i
+              Photoshop, Illustrator, InDesign, AfterEffects, Premiere,
+              FinalCut, Logic, ProTools, Figma, AutoCAD</i
             >
           </li>
           <li>
-            <b>2D</b> -
-            <i>Photoshop, Illustrator, InDesign, AfterEffects, Figma...</i>
-          </li>
-          <li>
-            <b>AWS cloud services</b> -
-            <i>S3, EC2, CloudFormation, CloudWatch, IDC, IAM...</i>
+            <b>AWS cloud services and infrastructure</b> -
+            <i>S3, EC2, CloudFormation/CDK, CloudWatch, IDC, IAM...</i>
           </li>
         </ul>
       </div>
@@ -424,7 +451,8 @@
     </script>
 
     <script>
-      const scrollDistance = window.innerHeight - 80;
+      const carouselHeight = 550; // window.innerHeight;
+      const scrollDistance = carouselHeight - 80;
       const target = document.querySelector("header.mainpage");
       const className = "scrolled";
 
