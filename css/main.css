@@ -39,8 +39,8 @@ header.mainpage.scrolled {
 
 a.topbar {
   color: #aaa;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 6px 20px;
+  border-radius: 30px;
   text-decoration: none;
   font-family: "Lexend Deca", serif;
   letter-spacing: 0.04em;
@@ -49,9 +49,8 @@ a.topbar {
 }
 
 a.topbar.current {
-  /* font-weight: bold; */
-  color: #fff;
-  /* background: #fff5; */
+  color: #222;
+  background: #fff;
 }
 
 .splash {
@@ -94,14 +93,13 @@ footer a:hover {
 h1 {
   font-size: 2.2em;
   font-weight: normal;
-  color: #3e3e3e;
   color: #325e8c;
   margin-top: 1.5em;
 }
 
 h2 {
   font-size: 1.2em;
-  color: #aaa;
+  color: #769fc9;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
