@@ -51,13 +51,23 @@
   </head>
   <body>
     <header class="mainpage">
-      <div>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <div
+          style="
+            background-image: url(/imgs/ev_cartoon_icon.svg);
+            border-radius: 100px;
+            height: 1.6em;
+            width: 1.6em;
+            background-color: #67caf6;
+            margin-right: 0.3em;
+          "
+        ></div>
         <a class="title" href="/"><span>eriks vitolins</span></a>
       </div>
       <div class="menu_container">
         <nav><a class="topbar current" href="/">home</a></nav>
-        <nav><a class="topbar" href="animation.html">animation</a></nav>
         <nav><a class="topbar" href="development.html">development</a></nav>
+        <nav><a class="topbar" href="animation.html">animation</a></nav>
         <nav>
           <a
             class="topbar"
@@ -87,9 +97,9 @@
         <div
           class="image"
           style="
-            background-image: url(imgs/deadline/portal_ui.jpg);
+            background-image: url(imgs/companies/aws.webp);
             background-position: 50% 87%;
-            filter: brightness(0.5);
+            filter: brightness(0.7) blur(5px);
           "
         ></div>
         <div class="label">
@@ -102,15 +112,20 @@
         <div
           class="image"
           style="
-            background-image: url(imgs/rgb/rgb_sketch.jpg);
+            background-image: url(imgs/companies/rgb-wacom.png);
             background-position: 50% 29%;
-            filter: brightness(0.5);
+            filter: brightness(0.7) blur(5px);
           "
         ></div>
         <div class="label">
           <div class="label-title">RGB Notes</div>
-          SAAS conceived, team built, full-stack developed, service launched,
-          customers served and then acquired by AWS.
+          <div style="max-width: 800px">
+            <!-- SAAS conceived, team built, full-stack developed, service launched,
+            customers served and then acquired by AWS. -->
+            A browser-based animation review system: A startup driven from
+            conception, to launch, to clients and then to eventual acquisition
+            by AWS.
+          </div>
         </div>
       </div>
 
@@ -171,101 +186,79 @@
     <footer>
       <div class="footer-column">
         <section>
-          <h1>Notable Projects</h1>
-          <ul>
-            <li>
-              Development, launch, and maintenance of 2 major cloud services'
-              AWS service console and monitor portal web/native UI:
-              <b>AWS Deadline Cloud</b> &amp; <b>Amazon Nimble Studio</b>
-            </li>
-            <li>
-              Instructor for Intro to Maya &amp; Intro to Rigging at
-              <b>AnimSchool</b>
-            </li>
-            <li>Founder and Head Developer of <b>RGB Notes</b></li>
-            <li>
-              Co-Founder, Developer and Animator at <b>Hack and Paint</b> game
-              studio.
-            </li>
-            <li>
-              Co-founder of <b>Rhythm and Hues Studio's AnimDev department</b>,
-              bridging production's needs and artist workflows to streamline
-              top-tier quality models, rigs and animation.
-            </li>
-            <li>
-              Creator of AnimTools animation utilities suite at
-              <b>Rhythm and Hues Studios</b>.
-            </li>
-          </ul>
+          <p style="font-size: 1.2em">
+            I’ve always been drawn to the space where creativity meets
+            technology. Over the years, I’ve had the chance to design, build,
+            and launch everything from major AWS cloud services like Deadline
+            Cloud and Amazon Nimble Studio, to tools and pipelines that shaped
+            animation workflows at Rhythm & Hues. Along the way, I’ve co-founded
+            studios, developed games, taught animation and rigging at
+            AnimSchool, and built products like RGB Notes and the AnimTools
+            suite to make artists’ lives easier. Whether it’s cloud platforms,
+            interactive experiences, or production tools, I’m passionate about
+            solving complex problems in ways that empower both creators and
+            teams.
+          </p>
         </section>
 
         <section>
-          <h1>Past Achievements</h1>
-          <ul>
-            <li>
-              2019-2025 - Joined Amazon Web Services (AWS) as a Frontend
-              Engineer II, helping to build, launch, monitor and maintain 2
-              cloud services:
-              <a href="https://aws.amazon.com/deadline-cloud/"
-                >AWS Deadline Cloud</a
-              >
-              and AWS Nimble Cloud .
-            </li>
-            <li>
-              Fall 2019 - RGB Notes acquired by The Nimble Collective - a
-              powerful studio-in-the-cloud service for animators and creators.
-            </li>
-            <li>
-              2016-2019 - Founder of RGB notes LLC. an online animation review
-              system.
-            </li>
-            <li>
-              2015-2016 - Animation Technical Director at Blue Sky Studios, to
-              evaluate and develop tools for animation workflow.
-            </li>
-            <li>
-              2003-2013 - A decade of professional VFX experience as Lead
-              Animator for Rhythm &amp; Hues. I am proud to have been a part of
-              such a wonderful and deserving group, winner of 2 VFX Academy
-              Award films.
-            </li>
-            <li>
-              2011-2013 - Helped form R&amp;H's 'Animation Development Group' to
-              assist the collaboration between the animation and other involved
-              departments. Designed and developed tools, rigs, workflows and
-              education in an effort improve artists' efficiency.
-            </li>
-            <li>
-              2009-2013 - Acted as R&amp;H Animation's 'Production Technology
-              Liaison' (PTL), to represent the animation department in all
-              studio-wide technology discussions, issues and decisions.
-            </li>
-            <li>
-              2004-2013 - Developed and supported R&amp;H's proprietary
-              Animation Toolset, 'AnimTools'.
-            </li>
-            <li>
-              2002 - Graduated with a Bachelor of Fine Arts from Academy of Art
-              University
-            </li>
-            <li>
-              2001 - Academy of Art University: Best Visual Effects for "Clone"
-              Directed by Steven Salisbury
-            </li>
-          </ul>
+          <!-- <h1>Professional experience using the following technologies...</h1> -->
+          <h1>What I do</h1>
+          <div style="display: flex; flex-direction: row; margin-top: 1em">
+            <div class="tech-icon-grid">
+              <img src="imgs/icons/tech/Adobe Illustrator.svg" />
+              <img src="imgs/icons/tech/Adobe Photoshop.svg" />
+              <img src="imgs/icons/tech/Adobe Premiere Pro.svg" />
+              <img src="imgs/icons/tech/After Effects.svg" />
+              <img src="imgs/icons/tech/Apache.svg" />
+              <img src="imgs/icons/tech/Autodesk Maya.svg" />
+              <img src="imgs/icons/tech/AWS.svg" />
+              <img src="imgs/icons/tech/Babel.svg" />
+              <img src="imgs/icons/tech/Bash.svg" />
+              <img src="imgs/icons/tech/Blender.svg" />
+              <img src="imgs/icons/tech/cline.svg" />
+              <img src="imgs/icons/tech/copilot-color.svg" />
+              <img src="imgs/icons/tech/CSharp.svg" />
+              <img src="imgs/icons/tech/CSS3.svg" />
+              <img src="imgs/icons/tech/cursor.svg" />
+              <img src="imgs/icons/tech/Figma.svg" />
+              <img src="imgs/icons/tech/GitHub.svg" />
+              <img src="imgs/icons/tech/HTML5.svg" />
+              <img src="imgs/icons/tech/Jasmine.svg" />
+              <img src="imgs/icons/tech/Markdown.svg" />
+              <img src="imgs/icons/tech/MySQL.svg" />
+              <img src="imgs/icons/tech/Node.js.svg" />
+              <img src="imgs/icons/tech/NPM.svg" />
+              <img src="imgs/icons/tech/openai.svg" />
+              <img src="imgs/icons/tech/PHP.svg" />
+              <img src="imgs/icons/tech/PostgresSQL.svg" />
+              <img src="imgs/icons/tech/Python.svg" />
+              <img src="imgs/icons/tech/Qt Framework.svg" />
+              <img src="imgs/icons/tech/React.svg" />
+              <img src="imgs/icons/tech/Redis.svg" />
+              <img src="imgs/icons/tech/Sass.svg" />
+              <img src="imgs/icons/tech/Tauri.svg" />
+              <img src="imgs/icons/tech/TypeScript.svg" />
+              <img src="imgs/icons/tech/Unity.svg" />
+              <img src="imgs/icons/tech/Vite.js.svg" />
+              <img src="imgs/icons/tech/Vue.js.svg" />
+              <img src="imgs/icons/tech/Webpack.svg" />
+              <img src="imgs/icons/tech/Yarn.svg" />
+              <img src="imgs/icons/Claude_AI_symbol.svg" />
+              <span>...</span>
+            </div>
+            <ul class="skills-list">
+              <li>web development</li>
+              <li>artist tools, pipeline and workflow development</li>
+              <li>rig/character supervision</li>
+              <li>character animation</li>
+            </ul>
+          </div>
         </section>
 
         <section>
-          <h1>VFX/Animation Credits</h1>
-          <div
-            style="
-              font-size: 0.6em;
-              display: grid;
-              grid-gap: 1em;
-              grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-              filter: grayscale(1) contrast(0.7);
-            "
-          >
+          <h1>Feature Film Contributions (VFX/Animation)</h1>
+          <div class="film-grid">
             <span
               ><img
                 style="width: 100%; border-radius: 4px"
@@ -311,7 +304,7 @@
               /><b>Ice Age: Collision Course</b> (2016)
               <a href="development.html#bluesky">animation tool development</a>
             </span>
-            <span style="font-size: 0.6em"
+            <span
               ><img
                 style="width: 100%; border-radius: 4px"
                 src="/imgs/posters/life-of-pi.jpg"
@@ -400,37 +393,6 @@
             </span>
           </div>
         </section>
-
-        <section>
-          <!-- <h1>Professional experience using the following technologies...</h1> -->
-          <h1>Technical Experience</h1>
-          <ul>
-            <li>
-              <b>Agentic AI Development Workflows</b> -
-              <i>Claude Code, Cline, Cursor, Copilot, OpenAI, Amazon Q</i>
-            </li>
-            <li>
-              <b>Frontend</b> -
-              <i>TypeScript, JavaScript, React, HTML, CSS, VueJS...</i>
-            </li>
-            <li>
-              <b>Backend</b> -
-              <i>Python, QT/PySide, MEL, C#, NodeJS, Bash, MYSQL, PHP, Redis</i>
-            </li>
-            <li>
-              <b>Digital Content Creation</b> -
-              <i
-                >Maya, Houdini, Blender, Voodoo (proprietary), 3DS Max, Unity,
-                Photoshop, Illustrator, InDesign, AfterEffects, Premiere,
-                FinalCut, Logic, ProTools, Figma, AutoCAD</i
-              >
-            </li>
-            <li>
-              <b>AWS cloud services and infrastructure</b> -
-              <i>S3, EC2, CloudFormation/CDK, CloudWatch, IDC, IAM...</i>
-            </li>
-          </ul>
-        </section>
       </div>
     </footer>
 
@@ -462,7 +424,7 @@
     </script>
 
     <script>
-      const carouselHeight = 550; // window.innerHeight;
+      const carouselHeight = window.innerHeight;
       const scrollDistance = carouselHeight - 80;
       const target = document.querySelector("header.mainpage");
       const className = "scrolled";

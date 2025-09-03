@@ -41,18 +41,34 @@
       href="//cdn.jsdelivr.net/fontawesome/3.2.0/css/font-awesome.min.css"
     />
     <link type="text/css" rel="stylesheet" rel="preload" href="css/main.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      rel="preload"
+      href="css/development.css"
+    />
   </head>
   <body>
     <header>
-      <div>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <div
+          style="
+            background-image: url(/imgs/ev_cartoon_icon.svg);
+            border-radius: 100px;
+            height: 1.6em;
+            width: 1.6em;
+            background-color: #67caf6;
+            margin-right: 0.3em;
+          "
+        ></div>
         <a class="title" href="/"><span>eriks vitolins</span></a>
       </div>
       <div class="menu_container">
         <nav><a class="topbar" href="/">home</a></nav>
-        <nav><a class="topbar" href="animation.html">animation</a></nav>
         <nav>
           <a class="topbar current" href="development.html">development</a>
         </nav>
+        <nav><a class="topbar" href="animation.html">animation</a></nav>
         <nav>
           <a
             class="topbar"
@@ -79,199 +95,396 @@
     ></div>
     <footer>
       <div class="footer-column">
-        <section>
-          <h1 id="aws">AWS - Amazon Deadline Cloud & Nimble Studio</h1>
-          <h2>Frontend, Infrastructure, Testing and Monitoring Development</h2>
-          <div class="grid">
-            <div
-              class="grid-item"
-              style="background-image: url('/imgs/deadline/portal_ui.jpg')"
-            ></div>
-            <div
-              class="grid-item"
-              style="background-image: url('/imgs/deadline/portal_ui2.jpg')"
-            ></div>
-            <div
-              class="grid-item"
-              style="background-image: url('/imgs/deadline/studio_setup.png')"
-            ></div>
-            <div
-              class="grid-item"
-              style="
-                background-image: url('/imgs/deadline/onboarding_wizard.jpg');
-              "
-            ></div>
+        <h1>Skill sets</h1>
+        <section class="highlights">
+          <div
+            class="highlights-icon"
+            style="background-image: url(/imgs/main/3dhand.webp)"
+          ></div>
+          <div class="highlights-details">
+            <h2>Frontend development</h2>
+            <p>
+              Frontend development provides a wide range of scale and technical
+              challenges -- from building a simple SPA website, to deploying
+              robust, cloud-based service consoles for AWS. I have years of
+              experience working with stakeholders (product, UX, backend
+              engineers, customers, etc), to bring their visions to reality in a
+              scalable, secure way -- while ensuring the user/customer has the
+              best experience possible.
+            </p>
+
+            <ul>
+              <li>Responsive UI layout</li>
+              <li>Accessibility</li>
+              <li>Localization</li>
+              <li>Authorization/Authentication</li>
+              <li>Application performance</li>
+              <li>Service monitoring & analytics</li>
+              <li>Packaging, deployment and caching</li>
+              <li>
+                Advanced browser APIs (Video, Canvas, Audio, Performance,
+                MIDI...)
+              </li>
+              <li>Unit/E2E testing strategy</li>
+            </ul>
           </div>
-
-          <p>
-            Collaborating with the product, UX, and management teams, our
-            frontend team delivered a user-friendly onboarding experience that
-            enables setup and monitoring of Deadline render servers in the
-            cloud. This included designing, deploying, and maintaining a secure,
-            scalable service admin console and artist-monitor application. We
-            also built and supported a full CI/CD pipeline, metrics, alarms,
-            dashboards, end-to-end tests, and canaries.
-          </p>
-          <p>
-            We balanced AWS design and security guidelines with customer needs,
-            working closely with Product and UX to design, execute, and refine
-            the final product—guided by Figma mocks and design documentation.
-          </p>
-
-          <ul>
-            <li>
-              <a href="https://aws.amazon.com/deadline-cloud/"
-                >https://aws.amazon.com/deadline-cloud/</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://aws.amazon.com/blogs/aws/amazon-nimble-studio-build-a-creative-studio-in-the-cloud/"
-                >https://aws.amazon.com/blogs/aws/amazon-nimble-studio-build-a-creative-studio-in-the-cloud/</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1 id="rgb">RGB Notes & Nimble Collective</h1>
-          <h2>Animation Review Software</h2>
-          <div class="grid">
-            <div
-              class="grid-item"
-              style="background-image: url('imgs/rgb/rgb_sketch.jpg')"
-            ></div>
-            <div
-              class="grid-item"
-              style="background-image: url('imgs/rgb/nimble_rgb.jpg')"
-            ></div>
-          </div>
-
-          <p>
-            With the help of the team that I organized, we designed and built
-            browser-based video review SAAS featuring advanced sketch-over and
-            key-framing tools. The implementation leveraged the browser’s Audio,
-            Video, and Canvas APIs.
-          </p>
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/watch?v=bvo2d-8SfOo"
-                >▶️ RGB Notes promotional video</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.awn.com/animationworld/amazon-nimble-studio-offers-animators-home-cloud"
-                >Amazon Nimble Studio Offers Animators a Home in the Cloud</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.awn.com/news/nimble-collective-extends-enterprise-class-animation-platform-acquisition-rgb-notes"
-                >Nimble Collective extends enterprise class animation platform
-                acquisition RGB Notes</a
-              >
-            </li>
-          </ul>
         </section>
 
-        <section>
-          <h1 id="bluesky">Blue Sky Studios</h1>
-          <p>
-            After evaluating the team's toolset and workflows, I proposed and
-            executed scalable, stable tool and UI designs by delivering:
-          </p>
-          <ul>
-            <li>
-              Future-proof artist utilities that adapt to production specific
-              conventions
-            </li>
-            <li>
-              Responsive UI/UX that enables faster, more expressive creativity
-              for the artist
-            </li>
-            <li>
-              Input validation and helpful error messaging to guide artists
-              toward success
-            </li>
-            <li>Clear user and technical documentation</li>
-          </ul>
-          <p>Some of the most notable tools include:</p>
+        <section class="highlights">
+          <div class="highlights-details" s>
+            <h2>Backend development</h2>
+            <p>
+              Over the years I've had several opportunities to both design and
+              maintain proprietary backends for web-based services and websites.
+              When building backend solutions, I'm able to concentrate on
+              building solutions for the expected scale and capacity.
+            </p>
 
-          <table class="tablelist">
-            <tr>
-              <td>Tween</td>
-              <td>
-                Set in-between keys via a real-time pose tween slider with undo
-                support
-              </td>
-            </tr>
-            <tr>
-              <td>Transposer</td>
-              <td>
-                Record, edit, and reapply character animation in world space
-              </td>
-            </tr>
-            <tr>
-              <td>SimpleSnap</td>
-              <td>
-                Record, edit, and reapply world-space animation of selected
-                objects
-              </td>
-            </tr>
-            <tr>
-              <td>ShapeFixer</td>
-              <td>
-                Add and manipulate animator-created blendshapes on rig-deformed
+            <ul>
+              <li>CI/CD pipeline design/management</li>
+              <li>REST API design and deployment</li>
+              <li>NoSQL and SQL database design</li>
+              <li>Realtime/push-based application features</li>
+              <li>
+                Service integration (Shotgun, Slack, Github, proprietary service
+                APIs, ...)
+              </li>
+            </ul>
+          </div>
+          <div
+            class="highlights-icon"
+            style="background-image: url(/imgs/main/pipe.webp)"
+          ></div>
+        </section>
+
+        <section class="highlights">
+          <div
+            class="highlights-icon"
+            style="background-image: url(/imgs/main/axisIcon_cropped.png)"
+          ></div>
+          <div class="highlights-details">
+            <h2>Creative tools and workflow development</h2>
+            <p>
+              As a tool developer for the creative digital space, I've had
+              several opportunities to consult, design, and build solutions for
+              several VFX/animation studios. By meeting with the artists,
+              engineers and supervisors, I can identify and discuss any lacking
+              features, existing bottlenecks, and workflow issues within their
+              organization. Afterwards, I can propose my recommended solutions
+              and work with the team to prioritize these goals and execute them.
+            </p>
+            <ul>
+              <li>
+                Complete tool/workflow evaluation for a team artists, with
+                proposals to improve the UX and efficiency for faster and higher
+                quality results.
+              </li>
+              <li>
+                Ergonomic, scalable tool design that fits the team's existing
+                standards (or expands upon them), allowing their utilities,
+                assets and workflows to stand the test of time.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="dark-container" style="padding-bottom: 3em">
+        <div class="footer-column">
+          <h1>Professional experience</h1>
+          <section>
+            <h2 id="aws">
+              AWS - Amazon Deadline Cloud
+              <span class="detail">2018-2025</span>
+            </h2>
+            <div style="display: flex; flex-direction: row">
+              <div class="section-row-cell">
+                <h3>UI, Infrastructure, Testing and Monitoring</h3>
+                <p>
+                  Collaborating with the product, UX, and management teams, our
+                  frontend team delivered a user-friendly onboarding experience
+                  that enables setup and monitoring of Deadline render servers
+                  in the cloud. This included designing, deploying, and
+                  maintaining a secure, scalable service admin console and
+                  artist-monitor application. We also built and supported a full
+                  CI/CD pipeline, metrics, alarms, dashboards, end-to-end tests,
+                  and canaries.
+                </p>
+                <p>
+                  We balanced AWS design and security guidelines along with
+                  customer needs, by working closely with our Product and UX
+                  teams to design, execute, and refine the customer experience
+                  based on detailed mocks and design documentation.
+                </p>
+
+                <ul>
+                  <li>
+                    <a href="https://aws.amazon.com/deadline-cloud/"
+                      >https://aws.amazon.com/deadline-cloud/</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://aws.amazon.com/blogs/aws/amazon-nimble-studio-build-a-creative-studio-in-the-cloud/"
+                      >https://aws.amazon.com/blogs/aws/amazon-nimble-studio-build-a-creative-studio-in-the-cloud/</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="section-row-cell">
+                <div
+                  style="
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(1.2) rotate(15deg) translate(35px, -73px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/deadline/portal_ui.jpg');
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(1) rotate(-14deg) translate(140px, 164px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/deadline/portal_ui2.jpg');
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(0.8) rotate(6deg) translate(20px, 354px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/deadline/studio_setup.png');
+                  "
+                ></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="section-row">
+              <div class="section-row-cell">
+                <div
+                  style="
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(1.1) rotate(5deg) translate(-55px, -43px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/companies/nimble-logo2.png');
+                  "
+                ></div>
+              </div>
+              <div class="section-row-cell">
+                <h2 id="nimble">
+                  Nimble Collective
+                  <span class="detail">2018</span>
+                </h2>
+                <h3>Acquisition and service integration</h3>
+                <p>
+                  Our former client Nimble Collective decided that RGB was a
+                  good fit for their platform and so we decided to join them
+                  along for the ride to launch a fully managed
+                  studio-in-the-cloud.
+                </p>
+                <p>
+                  After the acquisition, we started work to integrate the two
+                  products.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.awn.com/news/nimble-collective-extends-enterprise-class-animation-platform-acquisition-rgb-notes"
+                      >Nimble Collective extends enterprise class animation
+                      platform acquisition RGB Notes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="section-row">
+              <div class="section-row-cell">
+                <h2 id="rgb">
+                  RGB Notes
+                  <span class="detail">2015-2018</span>
+                </h2>
+                <h3>Browser-based animation review SAAS</h3>
+                <p>
+                  With the help of the team that I organized, we designed and
+                  built browser-based video review SAAS featuring advanced
+                  sketch-over and key-framing tools. The implementation
+                  leveraged the browser’s Audio, Video, and Canvas APIs.
+                </p>
+                <div style="padding: 1em; text-align: center">
+                  <a
+                    class="button"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://www.youtube.com/watch?v=bvo2d-8SfOo"
+                    >View promotional video</a
+                  >
+                </div>
+              </div>
+              <div class="section-row-cell">
+                <div
+                  style="
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(1.1) rotate(5deg) translate(105px, -53px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/rgb/rgb_sketch.jpg');
+                  "
+                ></div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="section-row">
+              <div class="section-row-cell">
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    width: 500px;
+                    height: 500px;
+                    transform: scale(1.6) rotate(0deg) translate(-45px, 136px);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/companies/scratt-alpha.png');
+                  "
+                ></div>
+              </div>
+              <div class="section-row-cell">
+                <h2 id="bluesky">
+                  Blue Sky Studios <span class="detail">2014</span>
+                </h2>
+                <h3>Animation Utilities Consultant and Developer</h3>
+                <p>
+                  I was hired as an Animation Technical Director to evaluate,
+                  propose and execute updates to existing tools and to develop
+                  new tools based on their specifications. The high level goals
+                  for all of these contributions were as follows:
+                </p>
+                <ul>
+                  <li>
+                    Tools should be future-proof and have the ability to adapt
+                    to future production requirements
+                  </li>
+                  <li>
+                    UI/UX should be intuitive and responsive allowing the
+                    artists to work more efficiently to achieve their creative
+                    goals
+                  </li>
+                  <li>
+                    UX design should include details such as input validation
+                    and helpful error messaging can guide artists toward success
+                    more quickly
+                  </li>
+                  <li>
+                    Tools should be well documented to allow clear understanding
+                    of they're usage, and their maintenance
+                  </li>
+                </ul>
+                <!-- <p>Some of the most notable tools include:</p>
+            
+            <table class="tablelist">
+              <tr>
+                <td>Tween</td>
+                <td>
+                  Set in-between keys via a real-time pose tween slider with undo
+                  support
+                </td>
+              </tr>
+              <tr>
+                <td>Transposer</td>
+                <td>
+                  Record, edit, and reapply character animation in world space
+                </td>
+              </tr>
+              <tr>
+                <td>SimpleSnap</td>
+                <td>
+                  Record, edit, and reapply world-space animation of selected
+                  objects
+                </td>
+              </tr>
+              <tr>
+                <td>ShapeFixer</td>
+                <td>
+                  Add and manipulate animator-created blendshapes on rig-deformed
                 characters
               </td>
             </tr>
-          </table>
-        </section>
+          </table> -->
+              </div>
+            </div>
+          </section>
 
-        <section>
-          <h1 id="rnh">Rhythm &amp; Hues Studios</h1>
-          <h2>Animation Development Team</h2>
-          <p>
-            This team consisted of several senior animators to oversee and
-            improve the workflows, rigs, and tools animators rely on to produce
-            high-quality content quickly. We collaborated with stakeholders
-            (modeling, rigging, technical anim, lighting, vfx &amp; anim
-            directors) to ensure artists could both consume and deliver
-            consistent, predictable assets. By overseeing all concurrent
-            productions, we consolidated solutions that worked globally and
-            avoided one-off fixes.
-          </p>
+          <section>
+            <div class="section-row">
+              <div class="section-row-cell">
+                <h2 id="rnh">
+                  Rhythm &amp; Hues Studios
+                  <span class="detail">2005-2014</span>
+                </h2>
+                <h3>Animation Development</h3>
+                <p>
+                  The Animation Development Team ("AnimDev") consisted of
+                  several senior animators (including myself) to oversee and
+                  improve the workflows, rigs, and tools animators rely on to
+                  produce high-quality content quickly. We collaborated with
+                  stakeholders (modeling, rigging, technical anim, lighting, vfx
+                  &amp; anim directors) to ensure artists could both consume and
+                  deliver consistent, predictable assets. By overseeing all
+                  concurrent productions, we consolidated solutions that worked
+                  globally and avoided one-off fixes.
+                </p>
 
-          <h2>Character/Rig Development</h2>
-          <p>
-            I coordinated with upstream and downstream animation stakeholders to
-            ensure rigs met animators&quot; performance needs. I also
-            established rig UX guidelines, scalable design principles, quality
-            standards, and production-wide tools and workflows.
-          </p>
-          <ul>
-            <li>
-              <em>Life of Pi</em> - Facial rig supervision on Tiger, Hyena,
-              Zebra, and Orangutan
-            </li>
-            <li>
-              <em>Alvin and the Chipmunks</em> - Facial rig supervision on
-              Alvin, Simon, and Theodore
-            </li>
-            <li>
-              <em>Marmaduke</em> - Surfing, posable ocean-wave rig supervision &
-              animation
-            </li>
-          </ul>
+                <h3>Character/Rig Supervision</h3>
+                <p>
+                  I coordinated with upstream and downstream animation
+                  stakeholders to ensure rigs met animators&quot; control and
+                  performance needs. I also established rig UX guidelines,
+                  scalable design principles, quality standards, and
+                  production-wide tools and workflows.
+                </p>
+                <!-- <ul>
+                  <li>
+                    <em>Life of Pi</em> - Facial rig supervision on Tiger,
+                    Hyena, Zebra, and Orangutan
+                  </li>
+                  <li>
+                    <em>Alvin and the Chipmunks</em> - Facial rig supervision on
+                    Alvin, Simon, and Theodore
+                  </li>
+                  <li>
+                    <em>Marmaduke</em> - Surfing, posable ocean-wave rig
+                    supervision & animation
+                  </li>
+                </ul> -->
 
-          <h2>Animation Tool Development</h2>
-          <p>
-            While a lead animator at Rhythm & Hues, I also developed and
-            supported 20+ widely used scripted tools for
-            <em>Voodoo</em>, their award-winning proprietary animation software.
-            Some of the most notable tools include:
-          </p>
-          <table class="tablelist">
+                <h3>Animation Tool Development</h3>
+                <p>
+                  While a lead animator at Rhythm & Hues, I also developed and
+                  supported 20+ widely used scripted tools "AnimTools" for
+                  <em>Voodoo</em>, their award-winning proprietary animation
+                  software.
+                  <!-- Some of the most notable tools include: -->
+                </p>
+                <!-- <table class="tablelist">
             <tr>
               <td>C.O.G.</td>
               <td>
@@ -308,7 +521,81 @@
               <td>Path Tools</td>
               <td>Build and edit complex character paths easily</td>
             </tr>
-          </table>
+          </table> -->
+              </div>
+              <div class="section-row-cell">
+                <div
+                  style="
+                    width: 500px;
+                    height: 260px;
+                    transform: scale(1) rotate(10deg) translate(80px, 0);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/golden-compass_pan.jpg');
+                    margin-bottom: 1em;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 500px;
+                    height: 260px;
+                    transform: scale(1) rotate(-3deg) translate(130px, 4px);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/hulk_punch.jpg');
+                    margin-bottom: 1em;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 500px;
+                    height: 260px;
+                    transform: scale(1) rotate(4deg) translate(110px, -7px);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url('/imgs/lifeofpi-orangtan.png');
+                    margin-bottom: 1em;
+                  "
+                ></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h1>Technical experience</h1>
+        A list of relevant technologies I've worked with professionally over the
+        years.
+        <section>
+          <ul>
+            <li>
+              <b>Agentic AI Development Workflows</b> -
+              <i>Claude Code, Cline, Cursor, Copilot, OpenAI, Amazon Q</i>
+            </li>
+            <li>
+              <b>Frontend</b> -
+              <i
+                >TypeScript, JavaScript, React, HTML, CSS, VueJS,
+                QT/PySide...</i
+              >
+            </li>
+            <li>
+              <b>Backend</b> -
+              <i>Python, NodeJS, Bash, MYSQL, PHP, ASP, C#, Redis</i>
+            </li>
+            <li>
+              <b>Digital Content Creation</b> -
+              <i
+                >Maya/MEL, Houdini, Blender, Voodoo (proprietary), 3DS Max,
+                Unity, Photoshop, Illustrator, InDesign, AfterEffects, Premiere,
+                FinalCut, Logic, ProTools, Figma, AutoCAD</i
+              >
+            </li>
+            <li>
+              <b>AWS cloud services and infrastructure</b> -
+              <i>S3, EC2, CloudFormation/CDK, CloudWatch, IDC, IAM...</i>
+            </li>
+          </ul>
         </section>
       </div>
     </footer>
@@ -340,6 +627,59 @@
 
       ga("create", "UA-42733934-1", "eriksssss.com");
       ga("send", "pageview");
+    </script>
+    <script>
+      function generateTOC(
+        containerSelector,
+        tocSelector,
+        includeTags = ["h1", "h2", "h3", "h4", "h5", "h6"]
+      ) {
+        const container = document.querySelector(containerSelector);
+        const toc = document.querySelector(tocSelector);
+        if (!container || !toc) return;
+
+        const headers = container.querySelectorAll(includeTags.join(","));
+
+        let root = document.createElement("div");
+        let stack = [{ level: 0, element: root }];
+
+        root.id = "toc";
+
+        headers.forEach((header) => {
+          const level = parseInt(header.tagName[1]);
+          if (!header.id) {
+            header.id = header.textContent
+              .trim()
+              .toLowerCase()
+              .replace(/\s+/g, "-");
+          }
+
+          const link = document.createElement("a");
+          link.textContent = header.textContent;
+          link.href = "#" + header.id;
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            header.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+
+          const details = document.createElement("details");
+          const summary = document.createElement("summary");
+          summary.appendChild(link);
+          details.appendChild(summary);
+
+          // adjust nesting
+          while (stack.length > 1 && stack[stack.length - 1].level >= level) {
+            stack.pop();
+          }
+          stack[stack.length - 1].element.appendChild(details);
+
+          stack.push({ level, element: details });
+        });
+
+        toc.appendChild(root);
+      }
+
+      // generateTOC(".footer-column", ".footer-side", ["h1", "h2", "h3"]);
     </script>
   </body>
 </html>

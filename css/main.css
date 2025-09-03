@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Lexend Deca", serif;
   font-weight: 300;
+  color: #444;
 }
 
 header {
@@ -61,10 +62,15 @@ a.topbar.current {
 }
 
 section {
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
   padding: 1em;
   margin: 1em 0;
   border-radius: 6px;
+  overflow: hidden;
+}
+
+section.highlights ul {
+  padding: 1.3em 0 1.3em 4em;
 }
 
 footer {
@@ -75,7 +81,8 @@ footer {
 }
 
 .footer-column {
-  width: 600px;
+  /* width: 600px; */
+  width: 60vw;
   margin: 40px auto;
 }
 
@@ -105,15 +112,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
-  color: #769fc9;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 1.6em;
+  color: #5c7289;
+  font-weight: 400;
 }
 
 h3 {
-  color: #000;
+  color: #333;
   margin: 2em 0 0;
+  font-weight: 300;
 }
 
 h1 a,
@@ -123,7 +130,6 @@ h2 a {
 }
 
 p {
-  color: #848484;
   font-size: 0.9em;
   line-height: 1.7em;
 }
@@ -208,18 +214,18 @@ table.contact_container a:hover {
 
 .button {
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 100px;
   text-align: center;
-  border: 1px solid #339dee;
-  color: #fff;
-  background: #ea3;
+  color: #1e1e1e;
+  background: rgb(206, 206, 206);
   cursor: pointer;
   text-decoration: none;
+  font-size: 0.9em;
 }
 
 .button:hover {
-  color: #ea3;
-  background: #fff;
+  color: #0087ff;
+  background: rgb(255, 255, 255);
 }
 
 .slide-container {
@@ -236,7 +242,7 @@ table.contact_container a:hover {
 .slide .image {
   background-size: cover;
   background-position: 50%;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .slide .label {
@@ -257,8 +263,7 @@ table.contact_container a:hover {
 
 .grid {
   display: inline-grid;
-  grid-template-columns: auto auto;
-  width: 540px;
+  grid-template-columns: 1fr auto;
   grid-gap: 1em;
 }
 
@@ -293,7 +298,7 @@ table.contact_container a:hover {
 @media (min-width: 1025px) {
   .slide-container,
   .image {
-    /* height: 100vh !important; */
+    height: 80vh !important;
   }
 
   .slide1 .image {
@@ -308,4 +313,68 @@ table.contact_container a:hover {
   .slide4 .image {
     background-position: 50% 50% !important;
   }
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent !important;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 40px !important;
+  height: 40px !important;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white !important;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none !important;
+}
+
+.tech-icon-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(7, 60px);
+  column-gap: 2px;
+  width: 440px;
+  row-gap: 2px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+.tech-icon-grid img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.film-grid {
+  font-size: 0.8em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+}
+
+div#toc details {
+  padding: 0.3em;
+}
+div#toc summary {
+  list-style: none;
+}
+
+div#toc details > details {
+  margin-left: 1em;
+}
+
+ul.skills-list {
+  font-size: 2em;
+  padding: 0 2em;
+  list-style-type: none;
+}
+
+ul.skills-list li {
+  margin-bottom: 1em;
 }
