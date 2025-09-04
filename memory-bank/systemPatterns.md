@@ -9,7 +9,6 @@ High-level architecture
 
 - Monolithic static repo: content is stored as self-contained HTML pages, CSS under `css/`, images under `imgs/`, and small JS assets in the repo root (e.g., `flickity2.3.0.js`).
 - No mandatory build step: pages are served as-is from GitHub Pages, S3, Netlify, or similar static hosts.
-- Optional client-side markdown rendering: includes `bower_components/marked` which can render Markdown into HTML in the browser for small interactive pages.
 
 Core file responsibilities
 
@@ -19,7 +18,6 @@ Core file responsibilities
 - css/development.css, css/timeline.css — page / feature-specific styles.
 - imgs/ — canonical location for media assets (posters, thumbnails, company logos, timeline assets).
 - flickity2.3.0.js (+ css) — lightweight carousel interactions included for galleries.
-- bower_components/marked — used where Markdown-to-HTML rendering is needed client-side.
 
 Design patterns & conventions
 
@@ -28,7 +26,7 @@ Design patterns & conventions
 - Progressive enhancement: pages render usable static HTML/CSS first; JS enhances behavior but is not required for core content visibility.
 - Asset locality: images referenced by relative paths (e.g., `imgs/posters/`, `imgs/anim_timeline/`) so pages remain portable.
 - Naming conventions: use descriptive, kebab- or snake-case filenames for images and pages; thumbnails in `_thumbnails/` when smaller variants are needed.
-- Reuse of small libs: include only necessary, small third-party libs (Flickity, Marked) checked into repo to avoid external dependency failure.
+- Reuse of small libs: include only necessary, small third-party libs (Flickity) checked into repo to avoid external dependency failure.
 
 Styling & CSS patterns
 
@@ -54,9 +52,7 @@ Critical implementation paths
   2. Ensure Flickity initialization (if used) matches DOM structure.
   3. Test responsiveness and loading speed.
 - Rendering Markdown (if used client-side):
-  1. Include `marked.min.js` from `bower_components/marked`.
-  2. Provide container element and initialize marked() on page load.
-  3. Sanitize or author trusted Markdown only (since rendering occurs client-side).
+  1. Sanitize or author trusted Markdown only (since rendering occurs client-side).
 
 Performance & maintainability patterns
 

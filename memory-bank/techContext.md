@@ -6,7 +6,6 @@ Core technologies
 - No required build system; pages render as authored in the repository.
 - Small third-party libraries included in-repo:
   - Flickity (carousel) — `flickity2.3.0.js` and `css/flickity2.3.0.css`
-  - Marked (client-side Markdown renderer) — `bower_components/marked`
 
 Development environment
 

@@ -36,7 +36,6 @@ What's next (Pending)
 Known issues & notes
 
 - Content is initial and intentionally concise — expand entries when recurring patterns require explicit instructions (e.g., detailed Flickity init snippets).
-- Client-side Markdown rendering exists in the repo (Marked) — any pages using it should assume trusted content.
 - Large media assets live in `imgs/`; consider a periodic audit to reduce repo size if needed.
 
 Next actionable items (ordered)

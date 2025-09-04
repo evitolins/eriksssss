@@ -73,24 +73,24 @@ section.highlights ul {
   padding: 1.3em 0 1.3em 4em;
 }
 
-footer {
+main {
   min-height: 500px;
   width: 100%;
   padding: 0 0 80px;
   margin-top: 20px;
 }
 
-.footer-column {
+.main-column {
   /* width: 600px; */
   width: 60vw;
   margin: 40px auto;
 }
 
-footer a {
+main a {
   color: inherit;
 }
 
-footer a:hover {
+main a:hover {
   color: #0087ff;
 }
 
@@ -99,7 +99,7 @@ footer a:hover {
     max-height: 200px;
   }
 
-  footer {
+  main {
     top: 286px;
   }
 }
@@ -282,10 +282,10 @@ table.contact_container a:hover {
     height: 60vh !important;
   }
 
-  .slide3 .image {
+  .slide1 .image {
     background-position: 20% 20% !important;
   }
-  .slide4 .image {
+  .slide2 .image {
     background-position: 40% 50% !important;
   }
   .slide5 .image {
@@ -301,10 +301,10 @@ table.contact_container a:hover {
     height: 80vh !important;
   }
 
-  .slide3 .image {
+  .slide1 .image {
     background-position: 50% 20% !important;
   }
-  .slide4 .image {
+  .slide2 .image {
     background-position: 50% 50% !important;
   }
   .slide5 .image {
@@ -425,22 +425,22 @@ ul.skills-list li {
 }
 
 /* Slide-specific backgrounds (moved from inline) */
-.slide1 .image {
+.slideX .image {
   background-image: url("/imgs/companies/aws.webp");
   background-position: 50% 87%;
 }
 
-.slide2 .image {
+.slideY .image {
   background-image: url("/imgs/companies/rgb-wacom.png");
   background-position: 50% 29%;
 }
 
-.slide3 .image {
+.slide1 .image {
   background-image: url("/imgs/life-of-pi_tiger.jpg");
   background-position: 50% 20%;
 }
 
-.slide4 .image {
+.slide2 .image {
   background-image: url("/imgs/snow-white_troll.jpg");
   background-position: 50% 20% !important;
 }
