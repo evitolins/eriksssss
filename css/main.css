@@ -282,16 +282,16 @@ table.contact_container a:hover {
     height: 60vh !important;
   }
 
-  .slide1 .image {
+  .slide3 .image {
     background-position: 20% 20% !important;
   }
-  .slide2 .image {
+  .slide4 .image {
     background-position: 40% 50% !important;
   }
-  .slide3 .image {
+  .slide5 .image {
     background-position: 90% 20% !important;
   }
-  .slide4 .image {
+  .slide6 .image {
     background-position: 70% 50% !important;
   }
 }
@@ -301,16 +301,16 @@ table.contact_container a:hover {
     height: 80vh !important;
   }
 
-  .slide1 .image {
-    background-position: 50% 20% !important;
-  }
-  .slide2 .image {
-    background-position: 50% 50% !important;
-  }
   .slide3 .image {
     background-position: 50% 20% !important;
   }
   .slide4 .image {
+    background-position: 50% 50% !important;
+  }
+  .slide5 .image {
+    background-position: 50% 20% !important;
+  }
+  .slide6 .image {
     background-position: 50% 50% !important;
   }
 }
@@ -376,5 +376,96 @@ ul.skills-list {
 }
 
 ul.skills-list li {
+  margin-bottom: 1em;
+}
+
+/* Utilities moved from inline styles */
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar-icon {
+  background-image: url("/imgs/ev_cartoon_icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  height: 1.6em;
+  width: 1.6em;
+  background-color: #67caf6;
+  margin-right: 0.3em;
+}
+
+.label-desc {
+  max-width: 800px;
+  display: block;
+}
+
+.dim-blur {
+  filter: brightness(0.7) blur(5px);
+}
+
+.tech-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.lead-text {
+  font-size: 1.2em;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 20px;
+  background: #000;
+}
+
+/* Slide-specific backgrounds (moved from inline) */
+.slide1 .image {
+  background-image: url("/imgs/companies/aws.webp");
+  background-position: 50% 87%;
+}
+
+.slide2 .image {
+  background-image: url("/imgs/companies/rgb-wacom.png");
+  background-position: 50% 29%;
+}
+
+.slide3 .image {
+  background-image: url("/imgs/life-of-pi_tiger.jpg");
+  background-position: 50% 20%;
+}
+
+.slide4 .image {
+  background-image: url("/imgs/snow-white_troll.jpg");
+  background-position: 50% 20% !important;
+}
+
+.slide5 .image {
+  background-image: url("/imgs/hulk_punch.jpg");
+  background-position: 50% 20%;
+}
+
+.slide6 .image {
+  background-image: url("/imgs/golden-compass_pan.jpg");
+}
+
+/* Film grid posters */
+.film-grid img,
+.film-grid .poster-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Rotated card helper (used in various pages) */
+.rotated-image {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 1em;
 }

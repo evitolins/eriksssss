@@ -66,3 +66,102 @@
 .section-row-cell.right {
   padding: 0 0 0 20px;
 }
+
+/* Absolute/rotated artwork helpers moved from inline styles in development.html */
+.abs-img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+}
+
+/* Specific placements */
+.abs-img--aws-1 {
+  transform: scale(1.2) rotate(15deg) translate(35px, -73px);
+  background-image: url("/imgs/deadline/portal_ui.jpg");
+}
+.abs-img--aws-2 {
+  transform: scale(1) rotate(-14deg) translate(140px, 164px);
+  background-image: url("/imgs/deadline/portal_ui2.jpg");
+}
+.abs-img--aws-3 {
+  transform: scale(0.8) rotate(6deg) translate(20px, 354px);
+  background-image: url("/imgs/deadline/studio_setup.png");
+}
+
+/* Nimble */
+.abs-img--nimble {
+  transform: scale(1.1) rotate(5deg) translate(-55px, -43px);
+  background-image: url("/imgs/companies/nimble-logo2.png");
+}
+
+/* RGB */
+.abs-img--rgb {
+  transform: scale(1.1) rotate(5deg) translate(105px, -53px);
+  background-image: url("/imgs/rgb/rgb_sketch.jpg");
+}
+
+/* Scratt / BlueSky */
+.abs-img--scratt {
+  position: absolute;
+  bottom: 0;
+  transform: scale(1.6) rotate(0deg) translate(-45px, 136px);
+  background-image: url("/imgs/companies/scratt-alpha.png");
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Small rotated posters used later in the page */
+.rotated-card {
+  width: 500px;
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+}
+.rotated-card--1 {
+  transform: scale(1) rotate(10deg) translate(80px, 0);
+  background-image: url("/imgs/golden-compass_pan.jpg");
+}
+.rotated-card--2 {
+  transform: scale(1) rotate(-3deg) translate(130px, 4px);
+  background-image: url("/imgs/hulk_punch.jpg");
+}
+.rotated-card--3 {
+  transform: scale(1) rotate(4deg) translate(110px, -7px);
+  background-image: url("/imgs/lifeofpi-orangtan.png");
+}
+
+/* Utility */
+.poster-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Page-specific splash background */
+.splash {
+  background-image: url("/imgs/developBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Highlights icon variants (moved from inline) */
+.highlights-icon--3dhand {
+  background-image: url("/imgs/main/3dhand.webp");
+}
+.highlights-icon--pipe {
+  background-image: url("/imgs/main/pipe.webp");
+}
+.highlights-icon--axis {
+  background-image: url("/imgs/main/axisIcon_cropped.png");
+}
+
+/* Small utility for centered padded blocks */
+.centered-pad {
+  padding: 1em;
+  text-align: center;
+}
