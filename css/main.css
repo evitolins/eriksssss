@@ -20,7 +20,6 @@ header {
   margin: 0;
   padding: 0 30px;
   height: 80px;
-  line-height: 80px;
   width: 100%;
   min-width: 600px;
   z-index: 1;
@@ -154,8 +153,7 @@ blockquote p {
 .title {
   color: inherit;
   text-decoration: none;
-  /* text-shadow: -1px 1px #222, -2px 2px #222, -3px 3px #222, -4px 4px #222,
-    -5px 5px #222; */
+  line-height: 0.8em;
 }
 
 .menu_container {
@@ -282,10 +280,10 @@ table.contact_container a:hover {
     height: 60vh !important;
   }
 
-  .slide1 .image {
+  .slide3 .image {
     background-position: 20% 20% !important;
   }
-  .slide2 .image {
+  .slide4 .image {
     background-position: 40% 50% !important;
   }
   .slide5 .image {
@@ -301,10 +299,10 @@ table.contact_container a:hover {
     height: 80vh !important;
   }
 
-  .slide1 .image {
+  .slide3 .image {
     background-position: 50% 20% !important;
   }
-  .slide2 .image {
+  .slide4 .image {
     background-position: 50% 50% !important;
   }
   .slide5 .image {
@@ -390,9 +388,11 @@ ul.skills-list li {
   background-image: url("/imgs/ev_cartoon_icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 100px;
   height: 1.6em;
   width: 1.6em;
+  aspect-ratio: 1;
   background-color: #67caf6;
   margin-right: 0.3em;
 }
@@ -425,22 +425,22 @@ ul.skills-list li {
 }
 
 /* Slide-specific backgrounds (moved from inline) */
-.slideX .image {
+.slide1 .image {
   background-image: url("/imgs/companies/aws.webp");
   background-position: 50% 87%;
 }
 
-.slideY .image {
+.slide2 .image {
   background-image: url("/imgs/companies/rgb-wacom.png");
   background-position: 50% 29%;
 }
 
-.slide1 .image {
+.slide3 .image {
   background-image: url("/imgs/life-of-pi_tiger.jpg");
   background-position: 50% 20%;
 }
 
-.slide2 .image {
+.slide4 .image {
   background-image: url("/imgs/snow-white_troll.jpg");
   background-position: 50% 20% !important;
 }
