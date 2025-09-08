@@ -20,7 +20,7 @@
 
 .dark-container {
   background-color: #333;
-  padding-top: 2em;
+  padding: 2em 0;
   color: #ddd;
 }
 
@@ -41,12 +41,26 @@
   margin-bottom: 3em;
 }
 
-.dark-container h2 > .detail {
+/* .dark-container h2 > .detail {
   background-color: #cc3b5a;
   padding: 3px 7px;
   font-style: italic;
   font-size: 0.5em;
   color: #222;
+} */
+
+.dark-container h2 {
+  /* border-bottom: 3px solid #e84d6e; */
+  border-left: 1em solid #e84d6e;
+  padding-left: 0.3em;
+}
+.dark-container h2 > .detail {
+  /* background-color: #cc3b5a; */
+  padding: 3px 7px;
+  font-style: italic;
+  font-size: 0.5em;
+  color: #aaa;
+  /* display: none; */
 }
 
 .section-row {
@@ -55,8 +69,12 @@
   margin-top: 1em;
 }
 
-.section-row-cell {
-  width: 50%;
+.section-row-cell-small {
+  width: 40%;
+  position: relative;
+}
+.section-row-cell-large {
+  width: 60%;
   position: relative;
 }
 .section-row-cell.left {
@@ -107,7 +125,7 @@
 .abs-img--scratt {
   position: absolute;
   bottom: 0;
-  transform: scale(1.6) rotate(0deg) translate(-45px, 136px);
+  transform: scale(1.6) rotate(0deg) translate(-45px, 148px);
   background-image: url("/imgs/companies/scratt-alpha.png");
   width: 500px;
   height: 500px;
@@ -164,4 +182,93 @@
 .centered-pad {
   padding: 1em;
   text-align: center;
+}
+
+.header-w-icon {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Base: hide all responsive-only toggles */
+.wide-only,
+.narrow-only {
+  display: none;
+}
+
+/* Wide screens */
+@media (min-width: 751px) {
+  :where(.wide-only) {
+    display: flex !important;
+  }
+}
+
+/* Narrow screens */
+@media (max-width: 750px) {
+  :where(.narrow-only) {
+    display: flex !important;
+  }
+}
+
+/* Narrow screens */
+@media (max-width: 750px) {
+  section.highlights {
+    padding: 0 2em;
+  }
+
+  .highlights-icon {
+    display: none;
+  }
+
+  .highlights-details {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .dark-container section {
+    margin-bottom: 0em;
+    padding: 0;
+    background: none !important;
+  }
+
+  .dark-container h1 {
+    margin-left: 1em;
+  }
+
+  .main-column h1 {
+    margin-left: 1em;
+  }
+
+  .section-row-cell-small {
+    display: none;
+    /* width: 20%; */
+    /* position: relative; */
+  }
+  .section-row-cell-large {
+    width: 100%;
+    position: relative;
+    /* background: #000000aa; */
+    padding: 1em;
+    border-radius: 6px;
+  }
+  .section-row-cell.left {
+    padding: 0 10px 0 0;
+  }
+
+  .section-row-cell.right {
+    padding: 0 0 0 10px;
+  }
+
+  .abs-img--nimble {
+    transform: scale(1.1) rotate(5deg) translate(-165px, -43px);
+  }
+
+  .abs-img--nimble {
+    transform: scale(1.1) rotate(5deg) translate(-165px, -43px);
+  }
+
+  section.highlights ul {
+    display: none !important;
+  }
 }
