@@ -192,7 +192,7 @@
     <main>
       <div class="main-column">
         <section>
-          <div style="display: flex">
+          <div class="main-summary">
             <div
               class="avatar-icon"
               style="
@@ -210,13 +210,13 @@
                 technology. Over the years, I’ve had the chance to design,
                 build, and launch everything from major AWS cloud services like
                 Deadline Cloud and Amazon Nimble Studio, to tools and pipelines
-                that shaped animation workflows at Rhythm & Hues. Along the way,
-                I’ve co-founded studios, developed games, taught animation and
-                rigging at AnimSchool, and built products like RGB Notes and the
-                AnimTools suite to make artists’ lives easier. Whether it’s
-                cloud platforms, interactive experiences, or production tools,
-                I’m passionate about solving complex problems in ways that
-                empower both creators and teams.
+                that shaped animation workflows at top-level VFX and animation
+                studios. Along the way, I’ve also co-founded studios, developed
+                games, taught animation and rigging, and built and launched
+                utilities like RGB Notes and the AnimTools suite to make
+                artists’ lives easier. Whether it’s cloud platforms, interactive
+                experiences, or production tools, I’m passionate about solving
+                complex problems in ways that empower both creators and teams.
               </p>
             </div>
           </div>
@@ -287,19 +287,6 @@
       </div>
     </main>
 
-    <script>
-      const carouselHeight = window.innerHeight;
-      const scrollDistance = carouselHeight - 80;
-      const target = document.querySelector("header.mainpage");
-      const className = "scrolled";
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY >= scrollDistance) {
-          target.classList.add(className);
-        } else {
-          target.classList.remove(className);
-        }
-      });
-    </script>
+    <script src="js/scrollMenu.js"></script>
   </body>
 </html>

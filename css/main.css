@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: "Lexend Deca", serif;
   font-weight: 300;
-  color: #444;
+  color: #56606b;
 }
 
 header {
@@ -37,7 +37,7 @@ header.mainpage.scrolled {
 }
 
 a.topbar {
-  color: #aaa;
+  color: #fff;
   padding: 6px 20px;
   border-radius: 30px;
   text-decoration: none;
@@ -360,6 +360,15 @@ table.contact_container a:hover {
   grid-template-columns: repeat(auto-fit, minmax(17%, 1fr));
 }
 
+.film-grid .title {
+  font-weight: 600;
+}
+
+.film-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
 div#toc details {
   padding: 0.3em;
 }
@@ -458,13 +467,6 @@ ul.skills-list li {
   background-image: url("/imgs/golden-compass_pan.jpg");
 }
 
-/* Film grid posters */
-.film-grid img,
-.film-grid .poster-img {
-  width: 100%;
-  border-radius: 4px;
-}
-
 /* Rotated card helper (used in various pages) */
 .rotated-image {
   width: 500px;
@@ -472,6 +474,10 @@ ul.skills-list li {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 1em;
+}
+
+.main-summary {
+  display: flex;
 }
 
 /* Narrow screens */
@@ -484,6 +490,14 @@ ul.skills-list li {
     align-items: flex-start;
   }
 
+  .slide .label {
+    font-size: 1.2em;
+  }
+
+  .main-summary > .avatar-icon {
+    display: none;
+  }
+
   .main-column {
     width: 100vw !important;
     padding: 0 !important;
@@ -491,7 +505,7 @@ ul.skills-list li {
 
   .lead-text {
     font-size: 1em;
-    padding: 0 3em;
+    /* padding: 0 1em; */
   }
 
   .iframe-container {
@@ -502,5 +516,15 @@ ul.skills-list li {
   }
   iframe {
     height: auto;
+  }
+
+  ul.skills-list {
+    text-align: center;
+    padding: 0;
+    font-size: 1.4em;
+  }
+
+  .film-grid {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
 }
