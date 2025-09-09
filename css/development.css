@@ -30,10 +30,6 @@
   color: #fff;
 }
 
-.dark-container h1 {
-  margin-bottom: 2em;
-}
-
 .dark-container section {
   background: linear-gradient(45deg, #00000052, transparent);
   padding: 1em 3em;
@@ -113,6 +109,7 @@
 .abs-img--nimble {
   transform: scale(1.1) rotate(5deg) translate(-55px, -43px);
   background-image: url("/imgs/companies/nimble-logo2.png");
+  filter: grayscale(0.4) brightness(0.5);
 }
 
 /* RGB */
@@ -131,6 +128,7 @@
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
+  filter: grayscale(0.4) brightness(0.5);
 }
 
 /* Small rotated posters used later in the page */
@@ -142,15 +140,15 @@
   margin-bottom: 1em;
 }
 .rotated-card--1 {
-  transform: scale(1) rotate(10deg) translate(80px, 0);
+  transform: scale(1) rotate(10deg) translate(80px, 0) scaleX(-1);
   background-image: url("/imgs/golden-compass_pan.jpg");
 }
 .rotated-card--2 {
-  transform: scale(1) rotate(-3deg) translate(130px, 4px);
+  transform: scale(1) rotate(-3deg) translate(21px, 6px) scaleX(-1);
   background-image: url("/imgs/hulk_punch.jpg");
 }
 .rotated-card--3 {
-  transform: scale(1) rotate(4deg) translate(110px, -7px);
+  transform: scale(1) rotate(4deg) translate(110px, -7px) scaleX(-1);
   background-image: url("/imgs/lifeofpi-orangtan.png");
 }
 
@@ -212,9 +210,9 @@
 
 /* Narrow screens */
 @media (max-width: 750px) {
-  section.highlights {
+  /* section.highlights {
     padding: 0 2em;
-  }
+  } */
 
   .highlights-icon {
     display: none;
@@ -232,25 +230,14 @@
     background: none !important;
   }
 
-  .dark-container h1 {
-    margin-left: 1em;
-  }
-
-  .main-column h1 {
-    margin-left: 1em;
-  }
-
   .section-row-cell-small {
     display: none;
-    /* width: 20%; */
-    /* position: relative; */
   }
   .section-row-cell-large {
     width: 100%;
     position: relative;
-    /* background: #000000aa; */
-    padding: 1em;
     border-radius: 6px;
+    box-sizing: border-box;
   }
   .section-row-cell.left {
     padding: 0 10px 0 0;

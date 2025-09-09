@@ -36,14 +36,8 @@
       rel="stylesheet"
     />
     <link type="text/css" rel="stylesheet" rel="preload" href="css/main.css" />
-
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/flickity2.3.0.css" />
+    <script src="js/flickity2.3.0.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -62,7 +56,7 @@
         <a class="title" href="/"><span>eriks vitolins</span></a>
       </div>
       <div class="menu-container menu-container-desktop">
-        <nav><a class="topbar current" href="/">home</a></nav>
+        <nav><a class="topbar current" href="/">about me</a></nav>
         <nav>
           <a class="topbar" href="development">development</a>
         </nav>
@@ -97,36 +91,38 @@
     </header>
 
     <div id="mobile-menu">
-      <nav><a class="topbar current" href="/">home</a></nav>
+      <nav><a class="topbar current" href="/">about me</a></nav>
       <nav>
         <a class="topbar" href="development">development</a>
       </nav>
       <nav><a class="topbar" href="animation">animation</a></nav>
-      <nav>
-        <a
-          class="topbar"
-          target="_blank"
-          rel="noopener"
-          href="http://instagram.com/eriksssssssss"
-        >
-          <img
-            style="width: 2em; height: auto"
-            src="imgs/social/instagram.svg"
-          />
-        </a>
-      </nav>
-      <nav>
-        <a
-          class="topbar"
-          target="_blank"
-          rel="noopener"
-          href="https://www.linkedin.com/in/eriks-vitolins-a754182/"
-          ><img
-            style="width: 2em; height: auto"
-            src="imgs/social/linkedin.svg"
-          />
-        </a>
-      </nav>
+      <div style="display: flex; flex-direction: row; font-size: 0.6em">
+        <nav>
+          <a
+            class="topbar"
+            target="_blank"
+            rel="noopener"
+            href="http://instagram.com/eriksssssssss"
+          >
+            <img
+              style="width: 2em; height: auto"
+              src="imgs/social/instagram.svg"
+            />
+          </a>
+        </nav>
+        <nav>
+          <a
+            class="topbar"
+            target="_blank"
+            rel="noopener"
+            href="https://www.linkedin.com/in/eriks-vitolins-a754182/"
+            ><img
+              style="width: 2em; height: auto"
+              src="imgs/social/linkedin.svg"
+            />
+          </a>
+        </nav>
+      </div>
     </div>
 
     <div
@@ -250,7 +246,7 @@
             <div
               style="
                 display: flex;
-                width: 50%;
+                width: calc(50% - 0.5em);
                 aspect-ratio: 1.7;
                 background-image: url(/imgs/developBanner.jpg);
                 background-size: cover;
@@ -266,7 +262,7 @@
             <div
               style="
                 display: flex;
-                width: 50%;
+                width: calc(50% - 0.5em);
                 aspect-ratio: 1.7;
                 background-image: url(/imgs/hulk_punch.jpg);
                 background-size: cover;

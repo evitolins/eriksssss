@@ -1,11 +1,10 @@
 body {
-  /* background: #d6d6d6; */
   background: linear-gradient(338deg, #acacac, transparent);
   padding: 0;
   margin: 0;
   font-family: "Lexend Deca", serif;
   font-weight: 300;
-  color: #56606b;
+  color: #647a92;
 }
 
 header {
@@ -87,9 +86,7 @@ a.topbar:not(.current):hover {
 }
 
 section {
-  /* background: #f3f3f3; */
-  padding: 1em;
-  margin: 1em 0;
+  padding: 2em 0;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -101,7 +98,6 @@ section.highlights ul {
 main {
   min-height: 500px;
   width: 100%;
-  /* padding: 0 0 80px; */
   margin-top: 20px;
 }
 
@@ -154,7 +150,6 @@ h2 a {
 }
 
 p {
-  font-size: 0.9em;
   line-height: 1.7em;
 }
 
@@ -543,12 +538,11 @@ ul.skills-list li {
 
   .main-column {
     width: 100vw !important;
-    padding: 0 !important;
+    padding: 0 2em !important;
   }
 
   .lead-text {
     font-size: 1em;
-    /* padding: 0 1em; */
   }
 
   .iframe-container {
