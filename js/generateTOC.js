@@ -17,6 +17,8 @@ function generateTOC(
   const lowestLevel = parseInt(includeTags[includeTags.length - 1][1]);
 
   headers.forEach((header) => {
+    if (!header.checkVisibility()) return;
+
     const level = parseInt(header.tagName[1]);
     if (!header.id) {
       header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, "-");

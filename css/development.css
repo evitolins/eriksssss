@@ -33,7 +33,7 @@
 .dark-container section {
   background: linear-gradient(45deg, #00000052, transparent);
   padding: 1em 3em;
-  overflow: hidden;
+  overflow: clip;
   margin-bottom: 3em;
 }
 
@@ -228,6 +228,9 @@
     margin-bottom: 0em;
     padding: 0;
     background: none !important;
+  }
+  .section-row {
+    margin-top: 3em;
   }
 
   .section-row-cell-small {

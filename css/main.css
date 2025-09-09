@@ -5,6 +5,7 @@ body {
   font-family: "Lexend Deca", serif;
   font-weight: 300;
   color: #647a92;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -88,7 +89,7 @@ a.topbar:not(.current):hover {
 section {
   padding: 2em 0;
   border-radius: 6px;
-  overflow: hidden;
+  overflow: clip;
 }
 
 section.highlights ul {
@@ -103,6 +104,7 @@ main {
 
 .main-column {
   width: 60vw;
+  padding: 0 2em;
   margin: 40px auto;
   box-sizing: border-box;
 }
@@ -125,10 +127,16 @@ main a:hover {
   }
 }
 
+h1,
+h2,
+h3 {
+  scroll-margin-top: 130px;
+}
+
 h1 {
   font-size: 2.2em;
   color: #325e8c;
-  margin: 0.2em 0;
+  /* margin: 0.2em 0; */
 }
 
 h2 {
@@ -279,6 +287,16 @@ table.contact_container a:hover {
   font-size: 2em;
 }
 
+.slide .label .label-button {
+  font-size: 1rem;
+  background-color: white;
+  padding: 6px 12px;
+}
+
+.slide .label .label-button:hover {
+  opacity: 0.8;
+}
+
 .grid {
   display: inline-grid;
   grid-template-columns: 1fr auto;
@@ -362,7 +380,7 @@ table.contact_container a:hover {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  overflow: hidden;
+  overflow: clip;
 }
 .tech-icon-container img {
   width: 60px;
@@ -538,7 +556,6 @@ ul.skills-list li {
 
   .main-column {
     width: 100vw !important;
-    padding: 0 2em !important;
   }
 
   .lead-text {
