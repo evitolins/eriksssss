@@ -35,6 +35,30 @@ header.mainpage.scrolled {
   background: #000000cc;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 15em;
+  padding: 4em 20vw;
+  background: #222;
+  color: #fff;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer a {
+  padding: 2em;
+  text-decoration: none;
+}
+
+footer .footer-container {
+  margin: 2em 0;
+}
+
 #mobile-menu {
   display: flex;
   position: fixed;
@@ -103,17 +127,19 @@ main {
 }
 
 .main-column {
-  width: 60vw;
+  /* width: 60vw;
   padding: 0 2em;
   margin: 40px auto;
+  box-sizing: border-box; */
+  padding: 40px 20vw;
   box-sizing: border-box;
 }
 
-main a {
+a {
   color: inherit;
 }
 
-main a:hover {
+a:hover {
   color: #0087ff;
 }
 
@@ -197,6 +223,47 @@ blockquote p {
   transition: all 0.2s ease-in-out 0s;
 }
 
+.dark-container {
+  background-color: #333;
+  padding: 2em 0;
+  color: #ddd;
+}
+
+.dark-container h1,
+.dark-container h2,
+.dark-container h3 {
+  color: #fff;
+}
+
+.dark-container section {
+  background: linear-gradient(45deg, #00000052, transparent);
+  padding: 1em 3em;
+  overflow: clip;
+  margin-bottom: 3em;
+}
+
+/* .dark-container h2 > .detail {
+  background-color: #cc3b5a;
+  padding: 3px 7px;
+  font-style: italic;
+  font-size: 0.5em;
+  color: #222;
+} */
+
+.dark-container h2 {
+  /* border-bottom: 3px solid #e84d6e; */
+  border-left: 1em solid #e84d6e;
+  padding-left: 0.3em;
+}
+.dark-container h2 > .detail {
+  /* background-color: #cc3b5a; */
+  padding: 3px 7px;
+  font-style: italic;
+  font-size: 0.5em;
+  color: #aaa;
+  /* display: none; */
+}
+
 .contact_container {
   width: 100%;
 }
@@ -240,18 +307,29 @@ table.contact_container a:hover {
 
 .button,
 .button:visited {
-  padding: 10px 20px;
+  /* padding: 10px 20px;
   border-radius: 100px;
   text-align: center;
   color: #1e1e1e;
   background: rgb(206, 206, 206);
   cursor: pointer;
   text-decoration: none;
+  font-size: 0.9em; */
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-align: center;
+  color: #ffffff;
+  /* background: rgb(206, 206, 206); */
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid currentColor;
   font-size: 0.9em;
 }
 
 .button:hover {
-  background: rgb(255, 255, 255);
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #000;
 }
 
 .slide-container {
@@ -277,9 +355,12 @@ table.contact_container a:hover {
   font-size: 2em;
   text-align: right;
   position: absolute;
-  bottom: 80px;
+  bottom: 2em;
   right: 0;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .slide .label .label-title {
@@ -287,9 +368,12 @@ table.contact_container a:hover {
   font-size: 2em;
 }
 
+.slide .label .label-button-container {
+  margin-top: 1em;
+}
+
 .slide .label .label-button {
   font-size: 1rem;
-  background-color: white;
   padding: 6px 12px;
 }
 
@@ -447,8 +531,8 @@ ul.skills-list li {
 }
 
 .label-desc {
-  max-width: 800px;
   display: block;
+  max-width: 50vw;
 }
 
 .dim-blur {
@@ -475,7 +559,7 @@ ul.skills-list li {
 
 /* Slide-specific backgrounds (moved from inline) */
 .slide1 .image {
-  background-image: url("/imgs/companies/aws.webp");
+  background-image: url("/imgs/deadline/2024-aws-deadline-cloud-8-job-monitor-blur.png");
   background-position: 50% 87%;
 }
 
@@ -550,16 +634,26 @@ ul.skills-list li {
     font-size: 1.2em;
   }
 
+  .slide .label .label-desc {
+    max-width: none;
+  }
+
   .main-summary > .avatar-icon {
     display: none;
   }
 
   .main-column {
-    width: 100vw !important;
+    padding: 20px 2em;
   }
 
   .lead-text {
     font-size: 1em;
+  }
+
+  .dark-container section {
+    margin-bottom: 0em;
+    padding: 0;
+    background: none !important;
   }
 
   .iframe-container {
