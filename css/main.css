@@ -465,6 +465,7 @@ table.contact_container a:hover {
   justify-content: center;
   flex-direction: row;
   overflow: clip;
+  box-sizing: border-box;
 }
 .tech-icon-container img {
   width: 60px;
@@ -521,7 +522,7 @@ ul.skills-list li {
   background-image: url("/imgs/ev_cartoon_icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% -60%;
   border-radius: 100px;
   height: 1.6em;
   width: 1.6em;
