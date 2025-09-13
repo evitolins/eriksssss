@@ -123,14 +123,9 @@ section.highlights ul {
 main {
   min-height: 500px;
   width: 100%;
-  margin-top: 20px;
 }
 
 .main-column {
-  /* width: 60vw;
-  padding: 0 2em;
-  margin: 40px auto;
-  box-sizing: border-box; */
   padding: 40px 20vw;
   box-sizing: border-box;
 }
