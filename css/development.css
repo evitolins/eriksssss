@@ -8,12 +8,12 @@
 .highlights-icon {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 15vw;
-  height: 15vw;
+  width: 40%;
+  aspect-ratio: 1;
 }
 
 .highlights-details {
-  width: 70%;
+  width: 60%;
   padding: 0 4em;
   box-sizing: border-box;
 }
@@ -126,13 +126,13 @@
 
 /* Highlights icon variants (moved from inline) */
 .highlights-icon--3dhand {
-  background-image: url("/imgs/main/3dhand.webp");
+  background-image: url("/imgs/illustrations/blush/Tech\ Life\ -\ Communication.png");
 }
 .highlights-icon--pipe {
-  background-image: url("/imgs/main/pipe.webp");
+  background-image: url("/imgs/illustrations/blush/Tech\ Life\ -\ Blockchain.png");
 }
 .highlights-icon--axis {
-  background-image: url("/imgs/main/axisIcon_cropped.png");
+  background-image: url("/imgs/illustrations/blush/Tech\ Life\ -\ Life\ Management.png");
 }
 
 /* Small utility for centered padded blocks */
