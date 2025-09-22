@@ -188,7 +188,7 @@ h2 a {
 }
 
 p {
-  line-height: 1.7em;
+  line-height: 1.6em;
 }
 
 li {
@@ -272,11 +272,6 @@ table.contact_container a {
 }
 table.contact_container a:hover {
   opacity: 0.8;
-}
-
-.tablelist {
-  background: #e4e4e4;
-  border-radius: 6px;
 }
 
 .tablelist td {
