@@ -2,7 +2,7 @@ body {
   background: linear-gradient(338deg, #acacac, transparent);
   padding: 0;
   margin: 0;
-  font-family: "Lexend Deca", serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
   color: #647a92;
   scroll-behavior: smooth;
